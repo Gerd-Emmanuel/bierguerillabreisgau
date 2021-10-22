@@ -20,6 +20,7 @@ import {MatCardModule} from "@angular/material/card";
 import {MatDividerModule} from "@angular/material/divider";
 import { BgbFooterComponent } from './components/bgb-footer/bgb-footer.component';
 import {NgImageSliderModule} from "ng-image-slider";
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import {NgImageSliderModule} from "ng-image-slider";
     BgbHomeSiteComponent,
     BgbMembershipComponent,
     BgbCarouselComponent,
-    BgbFooterComponent
+    BgbFooterComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

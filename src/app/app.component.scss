@@ -1,10 +1,15 @@
 .content {
   display: flex;
   justify-content: center;
-  padding-top: 50px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-top: 200px;
+  padding-left: 20em;
+  padding-right: 20em;
 }
+
+.site {
+  height: 100%;
+}
+
 .basic-style {
   color: #d91414;
 }

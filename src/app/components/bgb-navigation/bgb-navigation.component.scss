@@ -5,6 +5,14 @@
 .mat-icon-button {
   padding: 5px 5px 5px 5px;
 }
+.backgroundSmall {
+  background-image: url("~src/assets/images/scfreiburg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40%;
+  width: 100%;
+  //justify-content: center;
+}
 
 .background {
   background-image: url("~src/assets/images/scfreiburg.jpg");
