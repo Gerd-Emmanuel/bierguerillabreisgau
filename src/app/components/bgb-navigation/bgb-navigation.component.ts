@@ -6,9 +6,10 @@ import {Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./bgb-navigation.component.scss']
 })
 export class BgbNavigationComponent implements OnInit {
+  @Input() bigBackground?: boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
   }
-
 }

@@ -3,7 +3,16 @@
 }
 
 .mat-toolbar {
-  background-color: transparent;
+  //background-color: transparent;
+  background-color: #d91414;
   color: black;
+  border-top: 1px solid black;
+
+}
+
+.test {
+  min-height: 50px;
+  margin-top: auto;
+  flex: 0;
 }
 

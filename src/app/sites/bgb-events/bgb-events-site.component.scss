@@ -1,0 +1,35 @@
+.back {
+  background-color: black;
+}
+
+.textOrientation {
+  margin-right: 45%;
+  align-content: center;
+}
+
+.logoBackgroundImage {
+  min-height: 100%;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  //position: relative;
+  //background-color: #e40521;
+  //justify-content: center;
+  //padding-top: 145px;
+  //padding-left: 20em;
+  //padding-right: 20em;
+
+}
+
+.textStyling {
+  color: black;
+  //opacity: 1;
+  padding-left: 40px;
+  padding-top: 20px;
+}
+
+h1 {
+  margin-bottom: 50px;
+}

@@ -1,0 +1,56 @@
+.content {
+  //height: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.cardStylingLeft {
+  margin-top: 20px;
+  width: 70%;
+  border: none;
+  flex: 1;
+  //min-height: 100%;
+  background-color: #ffffff;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.cardStylingRight {
+  margin-top: 20px;
+  width: 30%;
+  border: none;
+  //flex: 1;
+  min-height: 100%;
+  //background-color: #ffffff;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.newsCard {
+  margin-top: 10px;
+}
+.newsCardImg {
+  //width: 300px;
+  height: 300px;
+  object-fit: contain;
+}
+.imageContainer {
+  margin-top: 50px;
+  width: 40%;
+  min-height: 50%;
+  object-fit: cover;
+  border: none;
+}
+
+.imageStyling {
+  //margin-left: 20%;
+  margin-top: 30px;
+
+  margin-right: 40px;
+  object-fit: fill;
+  height: 550px;
+  border: 1px solid black;
+
+  //padding-right: 5px;
+}
+

@@ -1,0 +1,21 @@
+.content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cardStylingLeft {
+  margin: 5px;
+  width: 600px;
+  max-height: 500px;
+  object-fit: cover;
+  border: 1px solid black;
+
+}
+
+.imageStyling {
+  width: 600px;
+  height: 400px;
+  padding-left: 5px;
+  padding-right: 10px;
+}

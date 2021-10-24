@@ -1,12 +1,7 @@
 <div class="site">
-  <section>
-    <bgb-header [bigBackground]="isActive()"></bgb-header>
-    <bgb-navigation></bgb-navigation>
-  </section>
-  <section class="content">
+  <bgb-navigation [bigBackground]="isActive()"></bgb-navigation>
+  <section class="site-content">
     <router-outlet></router-outlet>
   </section>
-  <section>
-    <bgb-footer></bgb-footer>
-  </section>
+  <bgb-footer></bgb-footer>
 </div>

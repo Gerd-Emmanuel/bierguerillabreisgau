@@ -20,7 +20,12 @@ import {MatCardModule} from "@angular/material/card";
 import {MatDividerModule} from "@angular/material/divider";
 import { BgbFooterComponent } from './components/bgb-footer/bgb-footer.component';
 import {NgImageSliderModule} from "ng-image-slider";
-import { HeaderComponent } from './header/header.component';
+import {BgbEventsSiteComponent} from "./sites/bgb-events/bgb-events-site.component";
+import {BgbShopSiteComponent} from "./sites/bgb-shop/bgb-shop-site.component";
+import {MatGridListModule} from "@angular/material/grid-list";
+import { BgbSchwimmnudelnComponent } from './sites/bgb-schwimmnudeln/bgb-schwimmnudeln.component';
+import { BgbContactComponent } from './sites/bgb-contact/bgb-contact.component';
+import {MatListModule} from "@angular/material/list";
 
 @NgModule({
   declarations: [
@@ -30,7 +35,10 @@ import { HeaderComponent } from './header/header.component';
     BgbMembershipComponent,
     BgbCarouselComponent,
     BgbFooterComponent,
-    HeaderComponent
+    BgbEventsSiteComponent,
+    BgbShopSiteComponent,
+    BgbSchwimmnudelnComponent,
+    BgbContactComponent
   ],
   imports: [
     BrowserModule,
@@ -52,7 +60,9 @@ import { HeaderComponent } from './header/header.component';
       }
     }),
     MatCardModule,
-    MatDividerModule
+    MatDividerModule,
+    MatGridListModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

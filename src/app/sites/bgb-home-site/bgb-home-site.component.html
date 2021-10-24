@@ -1,20 +1,63 @@
-<section class="homeContent">
-  <h1>
-    Bier Guerilla Breisgau
-  </h1>
-  <p>
-    Die Idee zu unserem Fanclub entstand nach dem Heimspiel gegen Eintracht Frankfurt am 07.10.2013. Nichts lag näher,
-    als dem Lieblingsgetränk im Station einen gebührenden Auftritt zu geben - geboren war der Fanclub "Bier Guerilla
-    Breisgau", kurz BGB.
+<h1> Bier Guerilla Breisgau</h1>
+<section class="content">
+  <mat-card class="cardStylingLeft">
+    <mat-card-title>Über uns</mat-card-title>
+    <mat-card-content>
+      <br/>
+      <p>
+        Die Idee zu unserem Fanclub entstand nach dem Heimspiel gegen Eintracht Frankfurt am 07.10.2013. Nichts lag
+        näher,
+        als dem Lieblingsgetränk im Station einen gebührenden Auftritt zu geben - geboren war der Fanclub "Bier
+        Guerilla
+        Breisgau", kurz BGB.
+      </p>
+      <p>
+        In einem, durch viel Alkohol geprägten Abend wurden viele here Ziele und Grundsätze diskutiert. So wollten wir
+        uns
+        für
+        ein Alkoholfreies-Bier-Verbot und Mindestlohn in Stadien einsetzen. Fleißig wurden auch Ämter wie die des
+        Frauen-Beauftragten oder des Niveau-Beauftragen verteilt. Mit einstimmiger Mehrheit wurde unser Präsident
+        gewählt,
+        der
+        es sich nicht nehmen lassen wollte bei Auswährtsfahrten künftig im Anzug anzutreten.
+      </p>
+      <p>
+        Kurzum eine lustige Truppe SC Fans, die es genießen die Heimspiele miteinander zu verbringen und dabei das ein
+        oder
+        andere Bier trinken.
+      </p>
+    </mat-card-content>
+    <img mat-card-image class="imageStyling" src="./assets/images/logo.jpg" [alt]="'Picture of member Schal'">
+  </mat-card>
+  <div class="cardStylingRight">
+    <mat-card>
+      <mat-card-title>News</mat-card-title>
+      <mat-card-content class="textContent">
+        <p>Hier informieren wir regelmäßig über Spannendes aus unserem Fanclub oder anstehende Ereignisse.</p>
+        <p>
+          Nichts verpassen? Dann folge uns auf unseren Social Media-Kanälen:
+          <mat-list>
+            <mat-list-item>Facebook:<br/>https://de-de.facebook.com/bierguerillabreisgau/</mat-list-item>
+            <mat-list-item>Twitter   <br/> https://twitter.com/B_Guerilla
+            </mat-list-item>
+          </mat-list>
+        </p>
+      </mat-card-content>
+    </mat-card>
+    <mat-card class="newsCard" *ngFor="let n of news">
+      <mat-card-header>
+        <mat-card-title>{{n.title}}</mat-card-title>
+        <mat-card-subtitle *ngIf="n.subtitle !== undefined">{{n.subtitle}}</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content class="textContent" *ngIf="n.newsText !== undefined">
+        {{n.newsText}}
+      </mat-card-content>
+      <img class="newsCardImg" *ngIf="n.imageUrl !== undefined" mat-card-image [src]="n.imageUrl"
+           [alt]="n.alt !== null ? n.alt : ''">
 
-    In einem, durch viel Alkohol geprägten Abend wurden viele here Ziele und Grundsätze diskutiert. So wollten wir uns
-    für
-    ein Alkoholfreies-Bier-Verbot und Mindestlohn in Stadien einsetzen. Fleißig wurden auch Ämter wie die des
-    Frauen-Beauftragten oder des Niveau-Beauftragen verteilt. Mit einstimmiger Mehrheit wurde unser Präsident gewählt,
-    der
-    es sich nicht nehmen lassen wollte bei Auswährtsfahrten künftig im Anzug anzutreten.
-
-    Kurzum eine lustige Truppe SC Fans, die es genießen die Heimspiele miteinander zu verbringen und dabei das ein oder
-    andere Bier trinken.
-  </p>
+    </mat-card>
+  </div>
+  <!--  <div class="imageContainer">-->
+  <!--    <img mat-card-image class="imageStyling" src="./assets/images/logo.jpg" [alt]="'Picture of member Schal'">-->
+  <!--  </div>-->
 </section>

@@ -1,15 +1,26 @@
 .content {
   display: flex;
   justify-content: center;
-  padding-top: 200px;
+  padding-top: 145px;
   padding-left: 20em;
   padding-right: 20em;
+  flex-wrap: wrap;
+  // min-height: 1800px;
 }
 
 .site {
-  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.site-content {
+  flex: 1;
 }
 
 .basic-style {
   color: #d91414;
 }
+

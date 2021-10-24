@@ -5,38 +5,6 @@
 .mat-icon-button {
   padding: 5px 5px 5px 5px;
 }
-.backgroundSmall {
-  background-image: url("~src/assets/images/scfreiburg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 40%;
-  width: 100%;
-  //justify-content: center;
-}
-
-.background {
-  background-image: url("~src/assets/images/scfreiburg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-  width: 100%;
-  //justify-content: center;
-}
-
-.background-change {
-  animation: backgroundChange 20s ease-in;
-  animation-iteration-count: infinite;
-}
-
-@keyframes backgroundChange {
-  0%, 100% {
-    background-image: url("~src/assets/images/scfreiburg.jpg");
-  }
-  50% {
-    background-image: url("~src/assets/images/dreisamstadion.jpg");
-  }
-
-}
 
 .mat-toolbar {
   background-color: transparent;
@@ -68,6 +36,45 @@
 
 
 .active-link {
-  color: #d91414;
+  //color: #d91414;
+  color: #f0f0f1;
   text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+}
+
+.backgroundSmall {
+  //background-image: url("~src/assets/images/scfreiburg.jpg");
+  background-repeat: no-repeat;
+  //background-color: #e40521;
+  background-color: #e40521;
+  background-size: cover;
+  height: 150px;
+  width: 100%;
+  position: relative;
+  border-bottom: 1px solid black;
+}
+
+.background {
+  //background-image: url("~src/assets/images/scfreiburg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  //background-position: fixed;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  justify-content: center;
+}
+
+.background-change {
+  animation: backgroundChange 20s linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes backgroundChange {
+  0%, 100% {
+    background-image: url("~src/assets/images/scfreiburg.jpg");
+  }
+  50% {
+    background-image: url("~src/assets/images/dreisamstadion.jpg");
+  }
+
 }
