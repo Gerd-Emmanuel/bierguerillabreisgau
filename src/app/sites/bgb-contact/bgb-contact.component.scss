@@ -2,6 +2,7 @@
   flex-grow: 1;
   align-items: stretch;
 }
+
 .cardMargin {
   margin-bottom: 10px;
 }
@@ -9,9 +10,11 @@
 .subtext {
   padding: 40px 40px 40px;
 }
-.listStyling {
-  padding-top: 20px;
+
+img {
+  height: 500px;
 }
+
 .mat-card-title {
   color: #d91414;
   padding-left: 30px;

@@ -34,7 +34,9 @@
   color: black;
 }
 
-
+.iconsSize {
+  height: 40px;
+}
 .active-link {
   //color: #d91414;
   color: #f0f0f1;
@@ -47,7 +49,7 @@
   //background-color: #e40521;
   background-color: #e40521;
   background-size: cover;
-  height: 150px;
+  height: 120px;
   width: 100%;
   position: relative;
   border-bottom: 1px solid black;
