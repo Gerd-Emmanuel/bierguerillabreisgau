@@ -1,42 +1,72 @@
 <section>
-  <h1>{{ 'membership.title' | translate }}</h1>
-  <p>
-    Falls Ihr Lust habt, bei uns Mitglied zu werden, um Spaß zu haben, den SC anzufeuern und mit uns Bier zu trinken,
-    zögert nicht, wir freuen uns immer über Zuwachs. Nehmt einfach Kontakt (Verlinkung auf Kontakt-Unterseite) zu uns
-    auf, oder direkt Mitgliedsantrag ausfüllen und abschicken.
-  </p>
-  <h2>Protokolle:</h2>
-  <ul>
-    <li>23.10.2013 Fanclubgründung</li>
-    <li>18.10.2014 1. Generalversammlung</li>
-    <li>26.10.2015 2. Generalversammlung</li>
-    <li>03.11.2016 3. Generalversammlung</li>
-    <li>22.10.2017 4. Generalversammlung</li>
-    <li>08.12.2018 6. Generalversammlung</li>
-    <li>07.12.2019 7. Generalversammlung</li>
-    <li>28.11.2020 8. Generalversammlung</li>
-  </ul>
-  <mat-divider></mat-divider>
-  <mat-tab-group [dynamicHeight]="false">
-    <mat-tab label="Mitgliederliste">
-      <bgb-carousel></bgb-carousel>
-    </mat-tab>
-    <mat-tab label="Satzung"> Satzung
-      Wie in jedem richtigen Fanclub darf natürlich auch bei uns die Satzung nicht fehlen.
-
-      Satzung Fanclub Bier Guerilla Breisgau (BGB)
-    </mat-tab>
-    <mat-tab label="Antrag"> Antrag
-      Bevor ihr mit dem Gedanken spielt unserem Fanclub beitreten zu wollen schaut euch bitte einige Fotos in der Rubrik
-      Bilder an. Falls ihr dann immer noch Lust auf Stadionatmosphäre, gute Laune und unser Lieblingsgetränk habt findet
-      ihr den Mitgliedsantrag für BGB und Fangemeinschaft unter nachfolgendem Link.
-
-      Mitgliedsantrag Bier Guerilla Breisgau
-      Mitgliedsantrag Fangemeinschaft
-      Der Mitgliedsbeitrag bei uns kostet 20 EUR pro Saison. Davon gehen 5 EUR an die Fangemeinschaft, für die es dafür
-      bei Auswärtsfahrten und Dauerkarte tolle Vergünstigungen gibt.
-      Wenn ihr Lust habt mitzumachen, einfach die beiden Anträge ausfüllen und zu einem Heimspiel mitbringen. Alternativ
-      könnt ihr die ausgefüllten und unterschriebenen Dokumente auch gerne einscannen und per Email zuschicken.
-    </mat-tab>
-  </mat-tab-group>
+  <div class="cardStyling">
+    <mat-card class="headerCard">
+      <mat-card-title>Mitgliedschaft</mat-card-title>
+    </mat-card>
+    <mat-card class="cardMargin">
+      <p class="subtext">
+        Falls Ihr Lust habt, bei uns Mitglied zu werden, um Spaß zu haben, den SC anzufeuern und mit uns Bier zu
+        trinken,
+        zögert nicht, wir freuen uns immer über Zuwachs. Nehmt einfach Kontakt (Verlinkung auf Kontakt-Unterseite) zu
+        uns
+        auf, oder direkt Mitgliedsantrag ausfüllen und abschicken.
+      </p>
+      <h2 class="subHeader">Protokolle:</h2>
+      <ul class="listStyle">
+        <li>23.10.2013 Fanclubgründung</li>
+        <li>18.10.2014 1. Generalversammlung</li>
+        <li>26.10.2015 2. Generalversammlung</li>
+        <li>03.11.2016 3. Generalversammlung</li>
+        <li>22.10.2017 4. Generalversammlung</li>
+        <li>08.12.2018 6. Generalversammlung</li>
+        <li>07.12.2019 7. Generalversammlung</li>
+        <li>28.11.2020 8. Generalversammlung</li>
+      </ul>
+    </mat-card>
+    <mat-card class="cardGroupStyling">
+      <mat-tab-group [dynamicHeight]="false">
+        <mat-tab label="Mitgliederliste">
+          <div class="cardGroupTabStyling">
+            <bgb-carousel></bgb-carousel>
+          </div>
+        </mat-tab>
+        <mat-tab label="Satzung">
+          <div class="cardGroupTabStyling">
+            <p>
+              Wie in jedem richtigen Fanclub darf natürlich auch bei uns die Satzung nicht fehlen.
+            </p>
+            <p>
+              Satzung Fanclub Bier Guerilla Breisgau (BGB)
+            </p>
+          </div>
+        </mat-tab>
+        <mat-tab label="Antrag">
+          <div class="cardGroupTabStyling">
+            <p>
+              Bevor ihr mit dem Gedanken spielt unserem Fanclub beitreten zu wollen schaut euch bitte einige Fotos in
+              der
+              Rubrik
+              Bilder an. Falls ihr dann immer noch Lust auf Stadionatmosphäre, gute Laune und unser Lieblingsgetränk
+              habt
+              findet
+              ihr den Mitgliedsantrag für BGB und Fangemeinschaft unter nachfolgendem Link.
+            </p>
+            <ul>
+              <li>Mitgliedsantrag Bier Guerilla Breisgau</li>
+              <li>Mitgliedsantrag Fangemeinschaft</li>
+            </ul>
+            <p>
+              Der Mitgliedsbeitrag bei uns kostet 20 EUR pro Saison. Davon gehen 5 EUR an die Fangemeinschaft, für die
+              es
+              dafür
+              bei Auswärtsfahrten und Dauerkarte tolle Vergünstigungen gibt.<br/>
+              Wenn ihr Lust habt mitzumachen, einfach die beiden Anträge ausfüllen und zu einem Heimspiel mitbringen.
+              Alternativ
+              könnt ihr die ausgefüllten und unterschriebenen Dokumente auch gerne einscannen und per Email zuschicken.
+            </p>
+          </div>
+        </mat-tab>
+      </mat-tab-group>
+    </mat-card>
+  </div>
 </section>

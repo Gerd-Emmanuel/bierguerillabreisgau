@@ -17,10 +17,10 @@ export class BgbHomeSiteComponent implements OnInit {
       title: "Generalversammlung 2021",
       subtitle: "24.10.2021",
       newsText: "Bald ist es wieder Zeit für eine Generalversammlung.",
-      imageUrl: "./assets/images/florian.jpg"
+      // imageUrl: "./assets/images/florian.jpg"
     },
     {
-      title: "Neues Stadion",
+      title: "Erster Heimsieg Neues Stadion",
       subtitle: "16.10.2021",
       newsText: "Das neue Stadion wird mit einem Heimsieg eingeweiht."
     },

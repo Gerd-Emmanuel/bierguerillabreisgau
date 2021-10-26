@@ -1,0 +1,32 @@
+:host {
+  flex-grow: 1;
+  align-items: stretch;
+}
+.cardMargin {
+  margin-bottom: 10px;
+}
+
+.subtext {
+  padding: 40px 40px 40px;
+}
+
+.mat-card-title {
+  color: #d91414;
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.cardStyling {
+  margin-top: 20px;
+  border: none;
+  //flex: 1;
+  margin-right: 5px;
+  margin-left: 5px;
+  min-height: 600px;
+}
+
+.cardMargin {
+  margin-top: 10px;
+}
+

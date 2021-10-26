@@ -26,6 +26,7 @@ import {MatGridListModule} from "@angular/material/grid-list";
 import { BgbSchwimmnudelnComponent } from './sites/bgb-schwimmnudeln/bgb-schwimmnudeln.component';
 import { BgbContactComponent } from './sites/bgb-contact/bgb-contact.component';
 import {MatListModule} from "@angular/material/list";
+import {MatTooltipModule} from "@angular/material/tooltip";
 
 @NgModule({
   declarations: [
@@ -40,30 +41,31 @@ import {MatListModule} from "@angular/material/list";
     BgbSchwimmnudelnComponent,
     BgbContactComponent
   ],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatButtonModule,
-    AppRoutingModule,
-    MatTabsModule,
-    IvyCarouselModule,
-    // ngx-translate and the loader module
-    HttpClientModule,
-    NgImageSliderModule,
-    TranslateModule.forRoot({
-      loader: {
-        provide: TranslateLoader,
-        useFactory: HttpLoaderFactory,
-        deps: [HttpClient]
-      }
-    }),
-    MatCardModule,
-    MatDividerModule,
-    MatGridListModule,
-    MatListModule
-  ],
+    imports: [
+        BrowserModule,
+        BrowserAnimationsModule,
+        MatToolbarModule,
+        MatIconModule,
+        MatButtonModule,
+        AppRoutingModule,
+        MatTabsModule,
+        IvyCarouselModule,
+        // ngx-translate and the loader module
+        HttpClientModule,
+        NgImageSliderModule,
+        TranslateModule.forRoot({
+            loader: {
+                provide: TranslateLoader,
+                useFactory: HttpLoaderFactory,
+                deps: [HttpClient]
+            }
+        }),
+        MatCardModule,
+        MatDividerModule,
+        MatGridListModule,
+        MatListModule,
+        MatTooltipModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

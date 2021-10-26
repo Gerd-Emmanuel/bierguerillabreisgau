@@ -8,6 +8,13 @@
   // min-height: 1800px;
 }
 
+.siteHeader {
+  font-size: 48px !important;
+  margin-left: 10px;
+  margin-top: 10px;
+  color: red;
+}
+
 .site {
   min-height: 100vh;
   display: flex;
@@ -16,8 +23,24 @@
   justify-content: center;
 }
 
+
 .site-content {
   flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.site-inner {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  //width: 80%;
+  display: flex;
+  //flex-grow: 1;
+  //align-items: flex-start;
+  //align-items: stretch;
+  flex-wrap: wrap;
+  flex-basis: 80%;
+  align-items: stretch;
 }
 
 .basic-style {
