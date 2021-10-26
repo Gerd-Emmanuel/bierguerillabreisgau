@@ -32,7 +32,7 @@
 }
 
 .subtext {
-  padding: 40px 40px 40px;
+  padding: 60px 40px 40px;
 }
 
 .mat-card-title {
@@ -46,3 +46,8 @@
   margin-top: 10px;
 }
 
+.imageStyling {
+  padding-top: 15px;
+  position: center;
+  object-fit: fill;
+}

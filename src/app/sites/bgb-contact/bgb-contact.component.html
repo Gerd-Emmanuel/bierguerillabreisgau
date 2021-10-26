@@ -1,9 +1,15 @@
-<section>
-  <div class="cardStyling">
-    <mat-card class="cardHeaderColor">
-      <mat-card-title>Kontakt</mat-card-title>
+<section class="content">
+  <div class="wrapper first">
+    <mat-card class="cardHeaderColor wrCollumn first">
+      <mat-card-title><b>Kontakt</b></mat-card-title>
     </mat-card>
-    <mat-card class="cardMargin subtext">
+  </div>
+  <div class="wrapper">
+    <mat-card class="cardMargin wrCollumn paddingRight">
+      <img mat-card-image class="imageStyling" src="./assets/images/logoold.png"
+           [alt]="'Picture of member Schal'">
+    </mat-card>
+    <mat-card class="cardMargin subtext wrCollumn">
       <p>
         Kontaktiert uns gerne persönlich im Stadion, in der Kneipe, oder über unsere Online-Kanäle:
       </p>
@@ -26,8 +32,6 @@
         </li>
       </ul>
     </mat-card>
-    <mat-card class="cardMargin">
-      <img mat-card-image src="./assets/images/logoold.png" [alt]="'Picture of member Schal'">
-    </mat-card>
+
   </div>
 </section>

@@ -1,9 +1,11 @@
-<div class="content">
-  <div class="cardStyling">
-    <mat-card class="headerCard cardMargin">
-      <mat-card-title>Events</mat-card-title>
+<section class="content">
+  <div class="wrapper first">
+    <mat-card class="cardHeaderColor wrCollumn first">
+      <mat-card-title><b>Events</b></mat-card-title>
     </mat-card>
-    <mat-card class="cardMargin subtext">
+  </div>
+  <div class="wrapper">
+    <mat-card class="cardMargin subtext wrCollumn paddingRight">
       <p>
         Eine Auswahl unserer Events (Liste wird hoffentlich noch lange fortgesetzt):
       </p>
@@ -21,8 +23,13 @@
         <li>30.11.2013: Auswärtsfahrt Liberec</li>
       </ul>
     </mat-card>
+    <mat-card class="cardMargin wrCollumn">
+      <img mat-card-image class="imageStyling" src="./assets/images/logoold.png"
+           [alt]="'Picture of member Schal'">
+    </mat-card>
   </div>
-</div>
+</section>
+
 
 <!--<div class="content">-->
 <!--  <div class="cardStyling">-->

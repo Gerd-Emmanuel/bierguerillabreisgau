@@ -1,10 +1,10 @@
 <section class="content">
   <div class="cardStylingLeft">
-    <mat-card class="cardHeaderColor">
-      <mat-card-title class="siteHeader">Bier Guerilla Breisgau</mat-card-title>
+    <mat-card class="cardHeaderColor titleCard">
+      <mat-card-title class="siteHeader"><b>Bier Guerilla Breisgau</b></mat-card-title>
     </mat-card>
-    <mat-card class="cardColoring cardMargin">
-      <mat-card-title><span class="cardColoring cardMargin">Über uns</span></mat-card-title>
+    <mat-card class="cardColoring cardMargin subtext">
+      <mat-card-title>Über uns</mat-card-title>
       <mat-card-content>
         <br/>
         <p>
@@ -36,26 +36,26 @@
     </mat-card>
   </div>
   <div class="cardStylingRight">
-    <mat-card>
-      <mat-card-title>News</mat-card-title>
-      <mat-card-content class="textContent">
+    <mat-card class="newsColoring">
+      <mat-card-header class="newsTitle">
+        <mat-card-title class="newsColoring"><b>News</b></mat-card-title>
+      </mat-card-header>
+      <mat-card-content class="subtextSmall">
         <p>Hier informieren wir regelmäßig über Spannendes aus unserem Fanclub oder anstehende Ereignisse.</p>
         <p>
           Nichts verpassen? Dann folge uns auf unseren Social Media-Kanälen:
-          <mat-list>
-            <mat-list-item>Facebook:<br/>https://de-de.facebook.com/bierguerillabreisgau/</mat-list-item>
-            <mat-list-item>Twitter <br/> https://twitter.com/B_Guerilla
-            </mat-list-item>
-          </mat-list>
         </p>
+        <li><u href="https://de-de.facebook.com/bierguerillabreisgau/">Facebook</u><br/></li>
+        <li><u href="https://twitter.com/B_Guerilla">Twitter</u><br/>
+        </li>
       </mat-card-content>
     </mat-card>
-    <mat-card class="newsCard" *ngFor="let n of news">
-      <mat-card-header>
-        <mat-card-title>{{n.title}}</mat-card-title>
+    <mat-card class="newsCard newsColoring" *ngFor="let n of news">
+      <mat-card-header class="smallHeader newsColoring">
+        <mat-card-title class="newsColoring">{{n.title}}</mat-card-title>
         <mat-card-subtitle *ngIf="n.subtitle !== undefined">{{n.subtitle}}</mat-card-subtitle>
       </mat-card-header>
-      <mat-card-content class="textContent" *ngIf="n.newsText !== undefined">
+      <mat-card-content class="subtextSmall" *ngIf="n.newsText !== undefined">
         {{n.newsText}}
       </mat-card-content>
       <img class="newsCardImg" *ngIf="n.imageUrl !== undefined" mat-card-image [src]="n.imageUrl"

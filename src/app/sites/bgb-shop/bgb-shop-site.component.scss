@@ -1,21 +1,75 @@
-.content {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
+:host {
+  flex-grow: 1;
+  align-items: stretch;
+  width: fit-content;
+  block-size: fit-content;
 }
 
-.cardStylingLeft {
-  margin: 5px;
-  width: 600px;
-  max-height: 500px;
-  object-fit: cover;
-  border: 1px solid black;
+.cardMargin {
+  margin-bottom: 10px;
+}
 
+.content {
+  margin-top: 20px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.wrCollumn {
+  flex: 1;
+}
+
+.paddingRight {
+  margin-right: 5px;
+}
+
+.paddingLeft {
+  margin-left: 5px;
+}
+
+.secondRow {
+  flex-direction: row;
+}
+
+.subtext {
+  padding: 40px 40px 40px;
+}
+
+//.mat-card-title {
+//  color: #d91414;
+//  padding-left: 30px;
+//  padding-top: 10px;
+//  padding-bottom: 10px;
+//}
+
+.titleCard {
+  color: #d91414;
+  padding-left: 40px;
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+
+.cardMargin {
+  margin-top: 10px;
 }
 
 .imageStyling {
-  width: 600px;
-  height: 400px;
-  padding-left: 5px;
-  padding-right: 10px;
+  max-width: 600px;
+  max-height: 400px;
+  padding-left: 25px;
+  padding-right: 25px;
+  object-fit: fill;
+}
+
+.imageStylingScarf {
+  max-width: 600px;
+  max-height: 400px;
+  padding-left: 25px;
+  padding-top: 20%;
+  padding-right: 25px;
+  object-fit: fill;
 }

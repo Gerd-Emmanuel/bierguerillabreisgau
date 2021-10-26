@@ -1,20 +1,34 @@
 :host {
   flex-grow: 1;
   align-items: stretch;
-}
-
-mat-card {
-  width: 100%;
-  //height: 100%;
-  box-sizing: border-box;
-}
-
-.example-spacer {
-  flex: 1 1 auto;
+  width: fit-content;
+  block-size: fit-content;
 }
 
 .cardMargin {
   margin-bottom: 10px;
+}
+
+.content {
+  margin-top: 20px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.wrCollumn {
+  flex: 1;
+}
+
+.paddingRight {
+  margin-right: 10px;
+}
+
+.secondRow {
+  flex-direction: row;
 }
 
 .subtext {
@@ -28,23 +42,10 @@ mat-card {
   padding-bottom: 10px;
 }
 
-.content {
-  width: 100%;
-  align-self: stretch;
-  flex: 0 0 100%;
-  flex-direction: column;
+.cardMargin {
+  margin-top: 10px;
 }
 
-.cardStyling {
-  height: 100%;
-  margin-top: 20px;
-  border: none;
-  flex: 1;
-  margin-right: 5px;
-  margin-left: 5px;
-}
 .imageStyling {
-  object-fit: fill;
-  height: 550px;
-  border: 1px solid black;
+  padding-top: 15px;
 }

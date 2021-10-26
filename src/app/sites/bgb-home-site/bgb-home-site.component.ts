@@ -10,10 +10,6 @@ export class BgbHomeSiteComponent implements OnInit {
 
   news: CardModel[] = [
     {
-      title: "News",
-      newsText: "Hier informieren wir regelmäßig über Spannendes aus unserem Fanclub oder anstehende Ereignisse.",
-    },
-    {
       title: "Generalversammlung 2021",
       subtitle: "24.10.2021",
       newsText: "Bald ist es wieder Zeit für eine Generalversammlung.",
