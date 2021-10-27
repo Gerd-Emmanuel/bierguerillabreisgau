@@ -1,8 +1,8 @@
 :host {
   flex-grow: 1;
-  align-items: stretch;
-  width: fit-content;
-  block-size: fit-content;
+  //align-items: stretch;
+  //width: fit-content;
+  //block-size: fit-content;
 }
 
 .cardMargin {
@@ -60,16 +60,18 @@
 .imageStyling {
   max-width: 600px;
   max-height: 400px;
-  padding-left: 25px;
-  padding-right: 25px;
-  object-fit: fill;
+  padding-left: 10px;
+  padding-right: 10px;
+  align-items: stretch;
+  width: fit-content;
+  block-size: fit-content;
 }
 
 .imageStylingScarf {
   max-width: 600px;
   max-height: 400px;
-  padding-left: 25px;
   padding-top: 20%;
+  padding-left: 25px;
   padding-right: 25px;
-  object-fit: fill;
+  object-fit: cover;
 }

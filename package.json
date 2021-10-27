@@ -29,10 +29,11 @@
     "angular-responsive-carousel": "^2.1.2",
     "bootstrap": "^4.5.3",
     "ng-image-slider": "^2.8.0",
+    "ng2-pdf-viewer": "^7.0.1",
     "ngx-bootstrap": "^7.0.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",
-    "update": "^0.4.2",
+    "update": "^0.7.4",
     "zenscroll": "^4.0.2",
     "zone.js": "~0.11.4"
   },
