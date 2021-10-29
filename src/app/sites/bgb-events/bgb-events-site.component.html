@@ -1,11 +1,15 @@
 <section class="content">
-  <div class="wrapper first">
-    <mat-card class="cardHeaderColor wrCollumn first">
-      <mat-card-title><b>Events</b></mat-card-title>
+  <div class="wrapperRow spaceBetweenCardsHor">
+    <mat-card class="wrapperCollumn titleCardPadding">
+      <mat-card-title><b class="basicTitleColor">Events</b></mat-card-title>
     </mat-card>
   </div>
-  <div class="wrapper">
-    <mat-card class="cardMargin subtext wrCollumn paddingRight">
+  <div class="wrapperRow">
+    <mat-card class="wrapperCollumn spaceBetweenCardsVert">
+      <img mat-card-image class="imageStylingBase" src="./assets/images/tunier.jpeg"
+           [alt]="'Fangemeinschaft Fussballtunier'">
+    </mat-card>
+    <mat-card class="wrapperCollumn containerTextPadding">
       <p>
         Eine Auswahl unserer Events (Liste wird hoffentlich noch lange fortgesetzt):
       </p>
@@ -22,10 +26,6 @@
         <li>01.02.2014: Auswärtsfahrt Mainz</li>
         <li>30.11.2013: Auswärtsfahrt Liberec</li>
       </ul>
-    </mat-card>
-    <mat-card class="cardMargin wrCollumn">
-      <img mat-card-image class="imageStyling" src="./assets/images/logoold.png"
-           [alt]="'Picture of member Schal'">
     </mat-card>
   </div>
 </section>

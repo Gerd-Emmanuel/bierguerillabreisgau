@@ -1,14 +1,11 @@
 <div class="test">
-  <mat-toolbar color="primary">
+  <mat-toolbar color="primary" [ngClass]="{ toolbarDark: darkMode, toolbar: !darkMode }">
     <mat-toolbar-row>
+      <button mat-icon-button aria-label="Activate Dark-Mode" (click)="toggleDarkmode()">
+        <mat-icon>{{ darkMode ? 'toggle_on' : 'toggle_off'}}</mat-icon>
+      </button>
       <span class="example-spacer"></span>
       <div class="padding">©2021 GeManuDesigns</div>
-      <!--      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">-->
-      <!--        <mat-icon>share</mat-icon>-->
-      <!--      </button>-->
-      <!--      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">-->
-      <!--        <mat-icon>contact_mail</mat-icon>-->
-      <!--      </button>-->
     </mat-toolbar-row>
   </mat-toolbar>
 </div>

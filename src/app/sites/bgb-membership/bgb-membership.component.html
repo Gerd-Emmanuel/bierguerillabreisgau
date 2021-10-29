@@ -1,19 +1,23 @@
-<section>
-  <div class="cardStyling">
-    <mat-card class="headerCard">
-      <mat-card-title><b>Mitgliedschaft</b></mat-card-title>
+<section class="content">
+  <div class="wrapperRow spaceBetweenCardsHor">
+    <mat-card class="wrapperCollumn titleCardPadding">
+      <mat-card-title>
+        <b class="basicTitleColor">Mitgliedschaft</b>
+      </mat-card-title>
     </mat-card>
-    <mat-card class="cardMargin">
-      <mat-card-title>Nuuuurr der SCF</mat-card-title>
-      <p class="subtext">
+  </div>
+  <div class="wrapperRow spaceBetweenCardsHor">
+    <mat-card class="wrapperCollumn containerTextPadding spaceBetweenCardsVert">
+      <mat-card-title class="basicTitleColor">Nuuuurr der SCF</mat-card-title>
+      <p>
         Falls Ihr Lust habt, bei uns Mitglied zu werden, um Spaß zu haben, den SC anzufeuern und mit uns Bier zu
         trinken,
         zögert nicht, wir freuen uns immer über Zuwachs. Nehmt einfach Kontakt (Verlinkung auf Kontakt-Unterseite) zu
         uns
         auf, oder direkt Mitgliedsantrag ausfüllen und abschicken.
       </p>
-      <h2 class="subHeader">Protokolle:</h2>
-      <ul class="listStyle">
+      <h2 class="basicTitleColor">Protokolle:</h2>
+      <ul>
         <li>23.10.2013 Fanclubgründung</li>
         <li>18.10.2014 1. Generalversammlung</li>
         <li>26.10.2015 2. Generalversammlung</li>
@@ -24,25 +28,33 @@
         <li>28.11.2020 8. Generalversammlung</li>
       </ul>
     </mat-card>
-    <mat-card class="cardGroupStyling">
+    <mat-card class="wrapperCollumn imageContainerFlex">
+      <img mat-card-image class="imageStylingBase imageSize" src="./assets/images/laststadion.jpeg"
+           [alt]="'Picture of member Schal'">
+    </mat-card>
+  </div>
+  <div class="wrapperRow">
+    <mat-card class="wrapperCollumn tabGroup">
       <mat-tab-group [dynamicHeight]="false">
         <mat-tab label="Mitgliederliste">
-          <div class="cardGroupTabStyling">
+          <div class="memberPadding">
             <bgb-carousel></bgb-carousel>
           </div>
         </mat-tab>
         <mat-tab label="Satzung">
-          <div class="cardGroupTabStyling">
+          <div class="containerTextPadding">
             <p>
               Wie in jedem richtigen Fanclub darf natürlich auch bei uns die Satzung nicht fehlen.
             </p>
             <p>
-              Satzung Fanclub Bier Guerilla Breisgau (BGB)
+              <a href="./assets/pdf/SatzungSCFBierGuerillaBreisgau.pdf" content="pdf">
+                Satzung Fanclub Bier Guerilla Breisgau (BGB)
+              </a>
             </p>
           </div>
         </mat-tab>
         <mat-tab label="Antrag">
-          <div class="cardGroupTabStyling">
+          <div class="containerTextPadding">
             <p>
               Bevor ihr mit dem Gedanken spielt unserem Fanclub beitreten zu wollen schaut euch bitte einige Fotos in
               der
@@ -53,8 +65,16 @@
               ihr den Mitgliedsantrag für BGB und Fangemeinschaft unter nachfolgendem Link.
             </p>
             <ul>
-              <li>Mitgliedsantrag Bier Guerilla Breisgau</li>
-              <li>Mitgliedsantrag Fangemeinschaft</li>
+              <li>
+                <a href="./assets/pdf/FG-Mitgliedsantrag.pdf" content="pdf">
+                  Mitgliedsantrag Bier Guerilla Breisgau
+                </a>
+              </li>
+              <li>
+                <a href="./assets/pdf/FG-Mitgliedsantrag.pdf" content="pdf">
+                  Mitgliedsantrag Fangemeinschaft
+                </a>
+              </li>
             </ul>
             <p>
               Der Mitgliedsbeitrag bei uns kostet 20 EUR pro Saison. Davon gehen 5 EUR an die Fangemeinschaft, für die

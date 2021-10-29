@@ -7,12 +7,14 @@
   margin: 30px;
 }
 
-.subtext {
+.containerTextPadding {
   padding: 40px 40px 40px;
 }
 
 .subtextSmall {
-  padding: 10px 20px 20px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 10px;
 }
 
 .cardMargin {
@@ -36,7 +38,7 @@
   padding-top: 8px;
 }
 
-.titleCard {
+.titleCardPadding {
   color: #d91414;
   padding-left: 40px;
   padding-top: 26px;
@@ -59,6 +61,7 @@
   min-height: 100%;
   margin-right: 5px;
   margin-left: 5px;
+  padding-top: 82px;
 }
 
 .newsCard {

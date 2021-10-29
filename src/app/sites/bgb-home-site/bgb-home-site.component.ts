@@ -25,6 +25,11 @@ export class BgbHomeSiteComponent implements OnInit {
       subtitle: "01.06.2021",
       newsText: "(Langes) Warten auf das erste Heimspiel im neuen Stadion."
     },
+    {
+      title: "Spiele in der Pandemie",
+      subtitle: "02.03.20`20`",
+      newsText: "So still war es im Stadion noch nie."
+    },
   ]
 
   constructor() {

@@ -1,50 +1,15 @@
-:host {
-  flex-grow: 1;
-  align-items: stretch;
-  width: fit-content;
-  block-size: fit-content;
+@import "src/styles/stylebasics";
+
+.imageSize {
+  max-height: 500px;
 }
 
-.cardStyling {
-  margin-top: 20px;
-}
-
-
-.headerCard {
-  margin-bottom: 10px;
-}
-
-.cardMargin {
-  margin-bottom: 10px;
-}
-
-.cardGroupStyling {
-  height: 420px;
-}
-
-.cardGroupTabStyling {
+.memberPadding {
+  padding-left: 10px;
+  padding-right: 10px;
   padding-top: 30px;
-  margin-left: 20px;
-  margin-right: 20px;
 }
 
-.subHeader {
-  padding-left: 30px;
-  color: #d91414;
-}
-
-.listStyle {
-  padding-left: 60px;
-  padding-bottom: 20px;
-}
-
-.mat-card-title {
-  color: #d91414;
-  padding-left: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.subtext {
-  padding: 20px 40px 10px;
+.tabGroup {
+  min-height: 470px;
 }

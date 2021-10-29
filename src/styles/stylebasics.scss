@@ -1,0 +1,65 @@
+a {
+  color: #d91414;
+  font-weight: bold;
+  font-size: 18px;
+}
+:host {
+  flex-grow: 1;
+  align-items: stretch;
+  width: fit-content;
+  block-size: fit-content;
+}
+
+
+// -- FONT AND COLOR --
+.basicTitleColor {
+  color: #d91414;
+}
+
+.basicTextColor {
+  color: black;
+}
+
+.titleCardPadding {
+  padding-left: 40px;
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+// -- MARGINS ---
+
+.spaceBetweenCardsHor {
+    margin-bottom: 10px;
+}
+.spaceBetweenCardsVert {
+    margin-right: 10px;
+}
+
+// -- BASIC STYLE
+// - image
+.imageContainerFlex {
+  display: flex;
+}
+.imageStylingBase {
+  justify-content: center;
+  object-fit: contain;
+  padding-top: 10px;
+}
+// -- padding, sizing, etc
+.containerTextPadding {
+  padding: 40px 40px 40px;
+}
+
+.content {
+  margin-top: 20px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+// -- layout
+.wrapperRow {
+  display: flex;
+}
+
+.wrapperCollumn {
+  flex: 1;
+}

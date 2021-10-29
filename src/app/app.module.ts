@@ -28,6 +28,7 @@ import {BgbContactComponent} from './sites/bgb-contact/bgb-contact.component';
 import {MatListModule} from "@angular/material/list";
 import {MatTooltipModule} from "@angular/material/tooltip";
 import {PdfViewerModule} from "ng2-pdf-viewer";
+import {MatButtonToggleModule} from "@angular/material/button-toggle";
 
 @NgModule({
   declarations: [
@@ -66,6 +67,8 @@ import {PdfViewerModule} from "ng2-pdf-viewer";
     MatGridListModule,
     MatListModule,
     MatTooltipModule,
+    PdfViewerModule,
+    MatButtonToggleModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

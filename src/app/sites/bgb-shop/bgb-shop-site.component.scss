@@ -1,77 +1,16 @@
-:host {
-  flex-grow: 1;
-  //align-items: stretch;
-  //width: fit-content;
-  //block-size: fit-content;
-}
+@import "src/styles/stylebasics";
 
-.cardMargin {
-  margin-bottom: 10px;
-}
-
-.content {
-  margin-top: 20px;
-  margin-right: 5px;
-  margin-left: 5px;
-}
-
-.wrapper {
-  display: flex;
-}
-
-.wrCollumn {
-  flex: 1;
-}
-
-.paddingRight {
-  margin-right: 5px;
-}
-
-.paddingLeft {
-  margin-left: 5px;
-}
-
-.secondRow {
-  flex-direction: row;
-}
-
-.subtext {
-  padding: 40px 40px 40px;
-}
-
-//.mat-card-title {
-//  color: #d91414;
-//  padding-left: 30px;
-//  padding-top: 10px;
-//  padding-bottom: 10px;
-//}
-
-.titleCard {
-  color: #d91414;
-  padding-left: 40px;
-  padding-top: 26px;
-  padding-bottom: 26px;
-}
-
-.cardMargin {
-  margin-top: 10px;
-}
-
-.imageStyling {
-  max-width: 600px;
+.imageStylingShop {
+  justify-content: center;
+  object-fit: contain;
   max-height: 400px;
-  padding-left: 10px;
-  padding-right: 10px;
-  align-items: stretch;
-  width: fit-content;
-  block-size: fit-content;
 }
 
-.imageStylingScarf {
-  max-width: 600px;
+.imageStylingShopScarf {
+  //max-width: 600px;
   max-height: 400px;
   padding-top: 20%;
   padding-left: 25px;
   padding-right: 25px;
-  object-fit: cover;
+  object-fit: contain;
 }

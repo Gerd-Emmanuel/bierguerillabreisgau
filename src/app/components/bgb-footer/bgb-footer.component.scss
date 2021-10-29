@@ -2,12 +2,17 @@
   flex: 1 1 auto;
 }
 
-.mat-toolbar {
+.toolbar {
   //background-color: transparent;
   background-color: #d91414;
   color: black;
   border-top: 1px solid black;
 
+}
+.toolbarDark {
+  background-color: black;
+  color: black;
+  border-top: 1px solid black;
 }
 
 .padding {

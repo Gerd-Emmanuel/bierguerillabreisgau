@@ -11,8 +11,14 @@ export class AppComponent {
   title = 'angular-website';
 
   constructor(private translate: TranslateService, private router: Router) {
+    if (localStorage.getItem('darkmode') === undefined) {
+      localStorage.setItem('darkmode', false.toString());
+    }
+    console.log("hallo")
+    console.log(localStorage.getItem('darkmode'))
     translate.setDefaultLang('de');
   }
+
 
   isActive(): boolean {
     return this.router.url.split("/")[1] === '';

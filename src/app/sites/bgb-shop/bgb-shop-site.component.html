@@ -1,13 +1,13 @@
 <section class="content">
-  <div class="wrapper first cardMargin">
-    <mat-card class="cardHeaderColor wrCollumn first titleCard">
+  <div class="wrapperRow spaceBetweenCardsHor">
+    <mat-card class="wrapperCollumn titleCardPadding">
       <mat-card-title>
-        <b>Shop Bier Guerilla Breisgau</b>
+        <b class="basicTitleColor">Shop Bier Guerilla Breisgau</b>
       </mat-card-title>
     </mat-card>
   </div>
-  <div class="wrapper first">
-    <mat-card class="cardHeaderColor wrCollumn first subtext">
+  <div class="wrapperRow spaceBetweenCardsHor">
+    <mat-card class="wrapperCollumn containerTextPadding">
       <mat-card-content>
         <p>
           Ein wirklicher Shop ist es zugegebener maßen ja nicht. Wer trotzdem Lust hat einen unserer Fanartikeln zu
@@ -20,37 +20,46 @@
       </mat-card-content>
     </mat-card>
   </div>
-  <div class="wrapper">
-    <mat-card class="cardMargin wrCollumn paddingRight">
+  <div class="wrapperRow spaceBetweenCardsHor">
+    <mat-card class="wrapperCollumn spaceBetweenCardsVert">
       <mat-card-header>
-        <mat-card-title>BGB x SC Schal</mat-card-title>
+        <mat-card-title class="basicTitleColor">BGB x SC Schal</mat-card-title>
         <mat-card-subtitle>Bier Guerilla Breisgau X Sc Freiburg - Schal</mat-card-subtitle>
       </mat-card-header>
-      <img mat-card-image class="imageStylingScarf" src="./assets/images/schal.jpg" [alt]="'Picture of member Schal'">
+      <div class="imageContainerFlex">
+        <img mat-card-image class="imageStylingBase imageStylingShopScarf" src="./assets/images/schal.jpg" [alt]="'Picture of member Schal'">
+      </div>
     </mat-card>
-    <mat-card class="cardMargin wrCollumn paddingLeft">
+    <mat-card class="wrapperCollumn">
       <mat-card-header>
-        <mat-card-title>Aufkleber</mat-card-title>
+        <mat-card-title class="basicTitleColor">Aufkleber</mat-card-title>
         <mat-card-subtitle>Edition: 5 Years - Blood, Sweat & Bears</mat-card-subtitle>
       </mat-card-header>
-
-      <img mat-card-image class="imageStyling" src="./assets/images/aufkleber1.jpg" [alt]="'Picture of member Schal'">
+      <div class="imageContainerFlex">
+        <img mat-card-image class="imageStylingBase imageStylingShop" src="./assets/images/aufkleber1.jpg"
+             [alt]="'Picture of member Schal'">
+      </div>
     </mat-card>
   </div>
-  <div class="wrapper">
-    <mat-card class="cardMargin wrCollumn paddingRight">
+  <div class="wrapperRow">
+    <mat-card class="wrapperCollumn spaceBetweenCardsVert">
       <mat-card-header>
-        <mat-card-title>Aufkleber (rund)</mat-card-title>
+        <mat-card-title class="basicTitleColor">Aufkleber (rund)</mat-card-title>
         <mat-card-subtitle>Edition: 5 Years - Blood, Sweat & Bears</mat-card-subtitle>
       </mat-card-header>
-      <img mat-card-image class="imageStyling" src="./assets/images/aufkleber2.jpg" [alt]="'Picture of member Schal'">
+      <div class="imageContainerFlex">
+        <img mat-card-image class="imageStylingBase imageStylingShop" src="./assets/images/aufkleber2.jpg"
+             [alt]="'Picture of member Schal'">
+      </div>
     </mat-card>
-    <mat-card class="cardMargin wrCollumn paddingLeft">
+    <mat-card class="wrapperCollumn">
       <mat-card-header>
-        <mat-card-title>Kaputzenpulli 2021</mat-card-title>
+        <mat-card-title class="basicTitleColor">Kaputzenpulli 2021</mat-card-title>
         <mat-card-subtitle>in Bearbeitung</mat-card-subtitle>
       </mat-card-header>
-      <img mat-card-image class="imageStyling" src="./assets/images/hoodie.jpg" [alt]="'Picture of member Schal'">
+      <div class="imageContainerFlex">
+        <img mat-card-image class="imageStylingBase imageStylingShop" src="./assets/images/hoodie.jpg" [alt]="'Picture of member Schal'">
+      </div>
     </mat-card>
   </div>
 </section>
