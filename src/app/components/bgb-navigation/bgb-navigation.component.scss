@@ -1,3 +1,14 @@
+:host {
+  display: flex;
+  width: 100%;
+}
+
+.wrapperRow {
+  display: flex;
+  flex: 1;
+  flex-basis: 100%;
+}
+
 .example-spacer {
   flex: 1 1 auto;
 }
@@ -12,18 +23,19 @@
 }
 
 .mat-button {
-  font-size: 1.4em;
+  font-size: 1.5em;
   font-weight: bold;
 }
 
 .homeBase {
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  font-size: 2.5em;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  font-size: 3.5em;
   font-weight: bold;
+  padding-bottom: 10px;
 }
 
 .homeFirst {
-  color: #d91414;
+  color: #e03636;
 }
 
 .homeMiddle {
@@ -43,37 +55,36 @@ mat-icon {
 }
 
 .active-link {
-  //color: #d91414;
   color: #f0f0f1;
   text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
 }
 
 .backgroundSmall {
-  //background-image: url("~src/assets/images/scfreiburg.jpg");
   background-repeat: no-repeat;
-  //background-color: #e40521;
   background-color: #e40521;
   background-size: cover;
   height: 120px;
   width: 100%;
   position: relative;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
 }
 
 .background {
-  //background-image: url("~src/assets/images/scfreiburg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  //background-position: fixed;
   height: 100%;
   width: 100%;
   position: absolute;
   justify-content: center;
 }
 
-.background-change {
+.backgroundChange {
   animation: backgroundChange 20s linear;
   animation-iteration-count: infinite;
+}
+
+.navFontSize {
+  font-size: 1.01vw;
 }
 
 @keyframes backgroundChange {
@@ -83,5 +94,110 @@ mat-icon {
   50% {
     background-image: url("~src/assets/images/dreisamstadion.jpg");
   }
+}
 
+.notVisible {
+  display: none;
+}
+
+.mobileLogo {
+  display: none;
+}
+
+.mobileLogoSmallNavbar {
+  display: none;
+}
+
+.matIconColorBig {
+  color: #d91414;
+  font-size: 34px;
+}
+
+.matIconColorSmall {
+  color: black;
+}
+
+.logoPadding {
+  margin-top: 18px;
+}
+
+.mobileLogoInvis {
+  display: none;
+}
+
+.mobileLogo {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .homeBase {
+    padding-top: 5px;
+    font-size: 45px;
+  }
+  .mobileLogo {
+    display: flex;
+    margin-top: 60px;
+    font-size: 45px;
+  }
+  .mobileLogoSmallNavbar {
+    display: flex;
+    margin-top: 15px;
+    margin-left: 45px;
+    font-size: 40px;
+  }
+
+  .mobileLogoInvis {
+    display: none;
+  }
+  .mobileLogoPos {
+    align-items: center;
+    flex: 1;
+  }
+  .navbarBig {
+    display: none;
+  }
+
+  .backgroundSmall {
+    background-color: #e40521;
+    height: 60px;
+    flex-basis: 100%;
+    position: relative;
+    border-bottom: 1px solid black;
+  }
+  .sidebar {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+  }
+  .notVisible {
+    display: block;
+  }
+  .example-container {
+    position: absolute;
+    height: 100%;
+  }
+  mat-sidenav-container {
+    height: 100%;
+  }
+  .active-link {
+    color: white;
+    text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+  }
+  .example-sidenav {
+    padding-top: 30px;
+    background-color: #e40521;
+  }
+
+  .sideNavPadding {
+    padding-left: 30px;
+  }
+
+  .adler {
+    max-width: 25%;
+    max-height: 25%;
+    align-self: flex-end;
+    position: absolute;
+  }
 }

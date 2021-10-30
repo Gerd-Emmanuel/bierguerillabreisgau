@@ -8,7 +8,6 @@ import {Component, Input, OnInit} from '@angular/core';
 export class BgbNavigationComponent implements OnInit {
   @Input() bigBackground?: boolean = false;
 
-  constructor() { }
 
   ngOnInit(): void {
   }

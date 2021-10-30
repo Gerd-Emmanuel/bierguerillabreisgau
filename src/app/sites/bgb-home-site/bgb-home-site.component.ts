@@ -23,12 +23,12 @@ export class BgbHomeSiteComponent implements OnInit {
     {
       title: "Neues Stadion",
       subtitle: "01.06.2021",
-      newsText: "(Langes) Warten auf das erste Heimspiel im neuen Stadion."
+      newsText: "(Langes) Warten auf das erste Heimspiel im neuen Stadion. BGB kann es kaum abwarten!"
     },
     {
       title: "Spiele in der Pandemie",
-      subtitle: "02.03.20`20`",
-      newsText: "So still war es im Stadion noch nie."
+      subtitle: "02.03.2020",
+      newsText: "So still war es im Stadion noch nie, es wird höchste Zeit ins Stadion zurückzukehren"
     },
   ]
 

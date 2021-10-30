@@ -1,18 +1,33 @@
-<div [class]="bigBackground ? 'background background-change' : 'backgroundSmall'">
-  <mat-toolbar color="primary">
+<!--TOPBAR-->
+<div [ngClass]="{background: bigBackground, backgroundChange: bigBackground, backgroundSmall: !bigBackground}"
+     [class]="bigBackground ? 'background' : 'backgroundSmall'">
+  <mat-toolbar color="primary" class="wrapperRow">
     <mat-toolbar-row class="iconsSize">
+      <button mat-icon-button aria-label="Navigation öffnen" class="notVisible" (click)="drawer.toggle()">
+        <mat-icon [ngClass]="{matIconColorBig: bigBackground, matIconColorSmall: !bigBackground }">
+          view_sidebar
+        </mat-icon>
+      </button>
+      <button mat-button [routerLink]="['/']" routerLinkActive="active-link"
+              [ngClass]="{mobileLogoInvis: bigBackground, mobileLogoSmallNavbar: !bigBackground}">
+        <span class="homeMiddle">B</span>
+        <span class="homeLast">G</span>
+        <span class="homeMiddle">B</span>
+      </button>
       <span class="example-spacer"></span>
-      <button matTooltip="Facebook" mat-icon-button [routerLink]="['/contact']">
-        <mat-icon>facebook</mat-icon>
-      </button>
-      <button matTooltip="Instagram" mat-icon-button [routerLink]="['/contact']">
-        <mat-icon>image</mat-icon>
-      </button>
+
       <button matTooltip="Email" mat-icon-button [routerLink]="['/contact']">
-        <mat-icon>mail</mat-icon>
+        <mat-icon [ngClass]="{notVisible: bigBackground, matIconColorBig:bigBackground, matIconColorSmall: !bigBackground }">mail</mat-icon>
       </button>
     </mat-toolbar-row>
-    <mat-toolbar-row>
+    <mat-toolbar-row [ngClass]="{mobileLogoInvis: !bigBackground, mobileLogo: bigBackground}" class="mobileLogoPos">
+      <button mat-button [routerLink]="['/']" routerLinkActive="active-link" class="mobileLogoPos">
+        <div class="homeFirst logoPadding">Bier<br/></div>
+        <div class="homeMiddle logoPadding">Guerilla<br/></div>
+        <div class="homeLast logoPadding">Breisgau</div>
+      </button>
+    </mat-toolbar-row>
+    <mat-toolbar-row class="navFontSize navbarBig">
       <span class="example-spacer"></span>
       <button mat-button routerLink="/home" routerLinkActive="active-link">
         Home
@@ -41,3 +56,50 @@
     </mat-toolbar-row>
   </mat-toolbar>
 </div>
+<!--SIDERBAR-->
+<mat-sidenav-container class="example-container" autosize>
+  <mat-sidenav #drawer class="example-sidenav" mode="side">
+    <mat-toolbar color="primary">
+      <mat-toolbar-row>
+        <button mat-button [routerLink]="['/']" class="homeBase" routerLinkActive="active-link"
+                (click)="drawer.toggle()">
+          <span class="homeLast">B</span>
+          <span class="homeMiddle">G</span>
+          <span class="homeLast">B</span>
+        </button>
+      </mat-toolbar-row>
+      <mat-toolbar-row class="sideNavPadding">
+        <button mat-button routerLink="/home" routerLinkActive="active-link" (click)="drawer.toggle()">
+          Home
+        </button>
+      </mat-toolbar-row>
+      <mat-toolbar-row class="sideNavPadding">
+        <button mat-button routerLink="/membership" routerLinkActive="active-link" (click)="drawer.toggle()">
+          Mitgliedschaft
+        </button>
+      </mat-toolbar-row>
+      <mat-toolbar-row class="sideNavPadding">
+        <button mat-button [routerLink]="['/events']" routerLinkActive="active-link" (click)="drawer.toggle()">
+          Events
+        </button>
+      </mat-toolbar-row>
+      <mat-toolbar-row class="sideNavPadding">
+        <button mat-button [routerLink]="['/shop']" routerLinkActive="active-link" (click)="drawer.toggle()">
+          Shop
+        </button>
+      </mat-toolbar-row>
+      <mat-toolbar-row class="sideNavPadding">
+        <button mat-button [routerLink]="['/schwimmnudeln']" routerLinkActive="active-link" (click)="drawer.toggle()">
+          Schwimmnudeln
+        </button>
+      </mat-toolbar-row>
+      <mat-toolbar-row class="sideNavPadding">
+        <button mat-button [routerLink]="['/contact']" routerLinkActive="active-link" (click)="drawer.toggle()">
+          Kontakt
+        </button>
+      </mat-toolbar-row>
+      <img class="adler" src="../../../assets/images/adler.png"/>
+    </mat-toolbar>
+  </mat-sidenav>
+
+</mat-sidenav-container>

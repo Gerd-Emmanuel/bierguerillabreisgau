@@ -7,16 +7,16 @@
     </mat-card>
   </div>
   <div class="wrapperRow spaceBetweenCardsHor">
-    <mat-card class="wrapperCollumn containerTextPadding spaceBetweenCardsVert">
+    <mat-card class="wrapperCollumn columnLeft containerTextPadding spaceBetweenCardsVert">
       <mat-card-title class="basicTitleColor">Nuuuurr der SCF</mat-card-title>
-      <p>
+      <p class="scf">
         Falls Ihr Lust habt, bei uns Mitglied zu werden, um Spaß zu haben, den SC anzufeuern und mit uns Bier zu
         trinken,
         zögert nicht, wir freuen uns immer über Zuwachs. Nehmt einfach Kontakt (Verlinkung auf Kontakt-Unterseite) zu
         uns
         auf, oder direkt Mitgliedsantrag ausfüllen und abschicken.
       </p>
-      <h2 class="basicTitleColor">Protokolle:</h2>
+      <h2 class="basicTitleColor titleFontSize">Protokolle:</h2>
       <ul>
         <li>23.10.2013 Fanclubgründung</li>
         <li>18.10.2014 1. Generalversammlung</li>
@@ -28,15 +28,15 @@
         <li>28.11.2020 8. Generalversammlung</li>
       </ul>
     </mat-card>
-    <mat-card class="wrapperCollumn imageContainerFlex">
-      <img mat-card-image class="imageStylingBase imageSize" src="./assets/images/laststadion.jpeg"
+    <mat-card class="wrapperCollumn columnRight imageContainerFlex">
+      <img mat-card-image class="imageStylingBase" src="./assets/images/laststadion.jpeg"
            [alt]="'Picture of member Schal'">
     </mat-card>
   </div>
   <div class="wrapperRow">
     <mat-card class="wrapperCollumn tabGroup">
       <mat-tab-group [dynamicHeight]="false">
-        <mat-tab label="Mitgliederliste">
+        <mat-tab class="test" label="Mitgliederliste">
           <div class="memberPadding">
             <bgb-carousel></bgb-carousel>
           </div>

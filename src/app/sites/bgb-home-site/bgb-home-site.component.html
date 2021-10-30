@@ -1,69 +1,74 @@
 <section class="content">
-  <div class="cardStylingLeft">
-    <mat-card class="cardHeaderColor titleCard">
-      <mat-card-title class="siteHeader"><b>Bier Guerilla Breisgau</b></mat-card-title>
-    </mat-card>
-    <mat-card class="cardColoring cardMargin subtext">
-      <mat-card-title>Über uns</mat-card-title>
-      <mat-card-content>
-        <br/>
-        <p>
-          Die Idee zu unserem Fanclub entstand nach dem Heimspiel gegen Eintracht Frankfurt am 07.10.2013. Nichts lag
-          näher,
-          als dem Lieblingsgetränk im Station einen gebührenden Auftritt zu geben - geboren war der Fanclub "Bier
-          Guerilla
-          Breisgau", kurz BGB.
-        </p>
-        <p>
-          In einem, durch viel Alkohol geprägten Abend wurden viele here Ziele und Grundsätze diskutiert. So wollten wir
-          uns
-          für
-          ein Alkoholfreies-Bier-Verbot und Mindestlohn in Stadien einsetzen. Fleißig wurden auch Ämter wie die des
-          Frauen-Beauftragten oder des Niveau-Beauftragen verteilt. Mit einstimmiger Mehrheit wurde unser Präsident
-          gewählt,
-          der
-          es sich nicht nehmen lassen wollte bei Auswährtsfahrten künftig im Anzug anzutreten.
-        </p>
-        <p>
-          Kurzum eine lustige Truppe SC Fans, die es genießen die Heimspiele miteinander zu verbringen und dabei das ein
-          oder
-          andere Bier trinken.
-        </p>
-      </mat-card-content>
-    </mat-card>
-    <mat-card class="cardMargin cardColoring">
-      <img mat-card-image class="imageStyling" src="./assets/images/logo.jpg" [alt]="'Picture of member Schal'">
+  <div class="wrapperRow spaceBetweenCardsHor titleRow">
+    <mat-card class="wrapperCollumn titleCardPadding">
+      <mat-card-title class="siteHeader">
+        <b class="basicTitleColor">Bier Guerilla Breisgau</b>
+      </mat-card-title>
     </mat-card>
   </div>
-  <div class="cardStylingRight">
-    <mat-card class="newsColoring">
-      <mat-card-header class="newsTitle">
-        <mat-card-title class="newsColoring"><b>News</b></mat-card-title>
-      </mat-card-header>
-      <mat-card-content class="subtextSmall">
-        <p>Hier informieren wir regelmäßig über Spannendes aus unserem Fanclub oder anstehende Ereignisse.</p>
-        <p>
-          Nichts verpassen? Dann folge uns auf unseren Social Media-Kanälen:
-        </p>
-        <li><u href="https://de-de.facebook.com/bierguerillabreisgau/">Facebook</u><br/></li>
-        <li><u href="https://twitter.com/B_Guerilla">Twitter</u><br/>
-        </li>
-      </mat-card-content>
-    </mat-card>
-    <mat-card class="newsCard newsColoring" *ngFor="let n of news">
-      <mat-card-header class="smallHeader newsColoring">
-        <mat-card-title class="newsColoring">{{n.title}}</mat-card-title>
-        <mat-card-subtitle *ngIf="n.subtitle !== undefined">{{n.subtitle}}</mat-card-subtitle>
-      </mat-card-header>
-      <mat-card-content class="subtextSmall" *ngIf="n.newsText !== undefined">
-        {{n.newsText}}
-      </mat-card-content>
-      <img class="newsCardImg" *ngIf="n.imageUrl !== undefined" mat-card-image [src]="n.imageUrl"
-           [alt]="n.alt !== null ? n.alt : ''">
-
-    </mat-card>
+  <div class="wrapperRow">
+    <div class="wrapperCollumn mainColumn">
+      <mat-card class="wrapperCollumn containerTextPadding spaceBetweenCardsVert spaceBetweenCardsHor">
+        <mat-card-title class="basicTitleColor">Über uns</mat-card-title>
+        <mat-card-content>
+          <br/>
+          <p>
+            Die Idee zu unserem Fanclub entstand nach dem Heimspiel gegen Eintracht Frankfurt am 07.10.2013. Nichts
+            lag
+            näher,
+            als dem Lieblingsgetränk im Station einen gebührenden Auftritt zu geben - geboren war der Fanclub "Bier
+            Guerilla
+            Breisgau", kurz BGB.
+          </p>
+          <p>
+            In einem, durch viel Alkohol geprägten Abend wurden viele here Ziele und Grundsätze diskutiert. So wollten
+            wir
+            uns
+            für
+            ein Alkoholfreies-Bier-Verbot und Mindestlohn in Stadien einsetzen. Fleißig wurden auch Ämter wie die des
+            Frauen-Beauftragten oder des Niveau-Beauftragen verteilt. Mit einstimmiger Mehrheit wurde unser Präsident
+            gewählt,
+            der
+            es sich nicht nehmen lassen wollte bei Auswährtsfahrten künftig im Anzug anzutreten.
+          </p>
+          <p>
+            Kurzum eine lustige Truppe SC Fans, die es genießen die Heimspiele miteinander zu verbringen und dabei das
+            ein
+            oder
+            andere Bier trinken.
+          </p>
+        </mat-card-content>
+      </mat-card>
+      <mat-card class="wrapperCollumn imageContainerFlex spaceBetweenCardsVert">
+        <img mat-card-image class="imageStylingBase titleImageSize" src="./assets/images/logo.jpg"
+             [alt]="'Picture of member Schal'">
+      </mat-card>
+    </div>
+    <div class="wrapperCollumn newsColumn">
+      <mat-card class="newsCard spaceBetweenCardsHor">
+        <mat-card-header class="newsTitle">
+          <mat-card-title class="newsColoring"><b>News</b></mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="newsTextPadding">
+          <p>Hier informieren wir regelmäßig über Spannendes aus unserem Fanclub oder anstehende Ereignisse.</p>
+          <p>
+            Nichts verpassen? Dann folge uns auf unseren Social Media-Kanälen:
+          </p>
+          <li><u href="https://de-de.facebook.com/bierguerillabreisgau/">Facebook</u><br/></li>
+          <li><u href="https://twitter.com/B_Guerilla">Twitter</u><br/></li>
+        </mat-card-content>
+      </mat-card>
+      <mat-card class="newsCard spaceBetweenCardsHor" *ngFor="let n of news">
+        <mat-card-header class="newsColoring">
+          <mat-card-title class="newsColoring">{{n.title}}</mat-card-title>
+          <mat-card-subtitle *ngIf="n.subtitle !== undefined">{{n.subtitle}}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content class="newsTextPadding" *ngIf="n.newsText !== undefined">
+          {{n.newsText}}
+        </mat-card-content>
+        <img class="newsCardImg" *ngIf="n.imageUrl !== undefined" mat-card-image [src]="n.imageUrl"
+             [alt]="n.alt !== null ? n.alt : ''">
+      </mat-card>
+    </div>
   </div>
-  <!--  <div class="imageContainer">-->
-  <!--    <img mat-card-image class="imageStyling" src="./assets/images/logo.jpg" [alt]="'Picture of member Schal'">-->
-  <!--  </div>-->
 </section>

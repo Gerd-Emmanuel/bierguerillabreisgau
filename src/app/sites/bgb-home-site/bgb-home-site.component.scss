@@ -1,105 +1,32 @@
-.content {
-  display: flex;
-  justify-content: center;
+@import "src/styles/stylebasics";
+
+.titleRow {
+  width: 70%;
+  padding-right: 10px;
 }
 
-.headerPadding {
-  margin: 30px;
+.newsColumn {
+  flex-basis: 30%;
+}
+.mainColumn {
+  flex-basis: 70%;
 }
 
-.containerTextPadding {
-  padding: 40px 40px 40px;
+.newsCard {
+  background-color: #d91414;
+  color: white;
 }
 
-.subtextSmall {
+.newsTextPadding {
   padding-right: 15px;
   padding-left: 15px;
   padding-bottom: 10px;
 }
 
-.cardMargin {
-  margin-top: 10px;
-}
-
-.cardColoring {
-  background-color: #ffffff;
-}
-
-.cardHeaderColor {
-  color: #d91414;
-}
-
-.mat-card-title {
-  color: #d91414;
-}
-
-.newsTitle {
-  margin-bottom: 10px;
-  padding-top: 8px;
-}
-
-.titleCardPadding {
-  color: #d91414;
-  padding-left: 40px;
-  padding-top: 26px;
-  padding-bottom: 26px;
-}
-
-.cardStylingLeft {
-  margin-top: 20px;
-  width: 70%;
-  border: none;
-  flex: 1;
-  margin-right: 5px;
-  margin-left: 5px;
-}
-
-.cardStylingRight {
-  margin-top: 20px;
-  width: 30%;
-  border: none;
-  min-height: 100%;
-  margin-right: 5px;
-  margin-left: 5px;
-  padding-top: 82px;
-}
-
-.newsCard {
-  margin-top: 10px;
-}
-
-.newsColoring {
-  background-color: #d91414;
-  color: white;
-}
-
-.newsColoring2 {
-  background-color: white;
-  color: #d91414;
-}
-
-.newsColoringHeader {
-  background-color: #d91414;
-  color: #000000;
-}
-
-.newsCardImg {
-  height: 300px;
-  object-fit: contain;
-}
-
-.imageContainer {
-  margin-top: 50px;
-  width: 40%;
-  min-height: 50%;
-  object-fit: cover;
-  border: none;
-}
-
-.imageStyling {
+.titleImageSize {
+  //max-height: 550px;
+  flex-basis: 100%;
   object-fit: fill;
-  height: 550px;
-  padding-top: 15px;
 
+  //padding-right: 0;
 }
-

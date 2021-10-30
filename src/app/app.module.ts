@@ -15,7 +15,6 @@ import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {TranslateLoader, TranslateModule} from "@ngx-translate/core";
 import {TranslateHttpLoader} from "@ngx-translate/http-loader";
 import {BgbCarouselComponent} from './components/bgb-carousel/bgb-carousel.component';
-import {IvyCarouselModule} from "angular-responsive-carousel";
 import {MatCardModule} from "@angular/material/card";
 import {MatDividerModule} from "@angular/material/divider";
 import {BgbFooterComponent} from './components/bgb-footer/bgb-footer.component';
@@ -27,8 +26,8 @@ import {BgbSchwimmnudelnComponent} from './sites/bgb-schwimmnudeln/bgb-schwimmnu
 import {BgbContactComponent} from './sites/bgb-contact/bgb-contact.component';
 import {MatListModule} from "@angular/material/list";
 import {MatTooltipModule} from "@angular/material/tooltip";
-import {PdfViewerModule} from "ng2-pdf-viewer";
 import {MatButtonToggleModule} from "@angular/material/button-toggle";
+import {MatSidenavModule} from "@angular/material/sidenav";
 
 @NgModule({
   declarations: [
@@ -51,7 +50,6 @@ import {MatButtonToggleModule} from "@angular/material/button-toggle";
     MatButtonModule,
     AppRoutingModule,
     MatTabsModule,
-    IvyCarouselModule,
     // ngx-translate and the loader module
     HttpClientModule,
     NgImageSliderModule,
@@ -67,8 +65,8 @@ import {MatButtonToggleModule} from "@angular/material/button-toggle";
     MatGridListModule,
     MatListModule,
     MatTooltipModule,
-    PdfViewerModule,
     MatButtonToggleModule,
+    MatSidenavModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

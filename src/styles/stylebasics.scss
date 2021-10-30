@@ -1,8 +1,3 @@
-a {
-  color: #d91414;
-  font-weight: bold;
-  font-size: 18px;
-}
 :host {
   flex-grow: 1;
   align-items: stretch;
@@ -10,6 +5,11 @@ a {
   block-size: fit-content;
 }
 
+a {
+  color: #d91414;
+  font-weight: bold;
+  font-size: 18px;
+}
 
 // -- FONT AND COLOR --
 .basicTitleColor {
@@ -24,7 +24,13 @@ a {
   padding-left: 40px;
   padding-top: 26px;
   padding-bottom: 26px;
+
+  mat-card-title {
+    font-size: 32px !important
+  }
 }
+
+
 // -- MARGINS ---
 
 .spaceBetweenCardsHor {
@@ -62,4 +68,45 @@ a {
 
 .wrapperCollumn {
   flex: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapperRow {
+    display: block;
+  }
+  .wrapperCollumn {
+    display: block;
+
+  }
+  .imageOrder {
+    order: 2;
+  }
+  .textOrder {
+    order: 1;
+  }
+  .spaceBetweenCardsHor {
+    margin-bottom: 5px;
+  }
+  .spaceBetweenCardsVert {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+  .containerTextPadding {
+    padding: 20px 20px 20px;
+  }
+  a {
+    color: #d91414;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .titleCardPadding {
+    padding-left: 20px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+  .content {
+    margin-top: 0px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
 }

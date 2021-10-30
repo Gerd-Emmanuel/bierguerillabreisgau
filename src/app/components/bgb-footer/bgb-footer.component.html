@@ -1,8 +1,17 @@
-<div class="test">
-  <mat-toolbar color="primary" [ngClass]="{ toolbarDark: darkMode, toolbar: !darkMode }">
+<div class="footer">
+  <mat-toolbar color="primary" [ngClass]="{ toolbar: true }">
     <mat-toolbar-row>
-      <button mat-icon-button aria-label="Activate Dark-Mode" (click)="toggleDarkmode()">
-        <mat-icon>{{ darkMode ? 'toggle_on' : 'toggle_off'}}</mat-icon>
+      <!--      <button mat-icon-button aria-label="Activate Dark-Mode" (click)="toggleDarkmode()">-->
+      <!--        <mat-icon>{{ darkMode ? 'toggle_on' : 'toggle_off'}}</mat-icon>-->
+      <!--      </button>-->
+      <button matTooltip="Facebook" mat-icon-button [routerLink]="['/contact']">
+        <mat-icon>facebook</mat-icon>
+      </button>
+      <button matTooltip="Instagram" mat-icon-button [routerLink]="['/contact']">
+        <mat-icon>image</mat-icon>
+      </button>
+      <button matTooltip="Instagram" mat-icon-button [routerLink]="['/contact']">
+        <mat-icon>twitter</mat-icon>
       </button>
       <span class="example-spacer"></span>
       <div class="padding">©2021 GeManuDesigns</div>

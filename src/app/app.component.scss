@@ -1,3 +1,5 @@
+
+
 .content {
   display: flex;
   justify-content: center;
@@ -53,4 +55,9 @@
 
 .basicBackColor {
   color: #d91414;
+}
+@media screen and (max-width: 768px) {
+  .site-inner {
+    padding-top: 20px;
+  }
 }

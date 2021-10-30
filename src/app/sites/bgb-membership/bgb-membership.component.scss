@@ -1,9 +1,22 @@
 @import "src/styles/stylebasics";
 
-.imageSize {
-  max-height: 500px;
+.scf {
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.columnLeft {
+  flex-basis: 55%;
+}
+.titleFontSize {
+  font-size: 24px;
+  padding-bottom: 5px;
 }
 
+.columnRight {
+  flex-basis: 45%;
+}
 .memberPadding {
   padding-left: 10px;
   padding-right: 10px;
@@ -12,4 +25,10 @@
 
 .tabGroup {
   min-height: 470px;
+  padding-left: 10px;
 }
+//@media screen and (max-width: 768px) {
+//  .tabGroup {
+//    padding-right: 10px;
+//  }
+//}

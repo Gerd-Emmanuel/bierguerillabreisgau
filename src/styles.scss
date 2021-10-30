@@ -1,7 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/scss/bootstrap-grid.scss";
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Arvo');
+
+*:not(mat-icon) {
+  font-family: Arvo /* Replace with your custom font */, sans-serif !important;
+  /* Add !important to overwrite all elements */
+}
+
 
 html, body {
   min-height: 100%;
@@ -25,4 +30,3 @@ body {
 body, .smooth-container {
   scroll-behavior: smooth
 }
-
