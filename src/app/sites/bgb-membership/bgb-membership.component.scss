@@ -1,10 +1,7 @@
 @import "src/styles/stylebasics";
 
 .scf {
-  padding-right: 15px;
-  padding-left: 15px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding: 15px;
 }
 .columnLeft {
   flex-basis: 55%;
@@ -27,8 +24,4 @@
   min-height: 470px;
   padding-left: 10px;
 }
-//@media screen and (max-width: 768px) {
-//  .tabGroup {
-//    padding-right: 10px;
-//  }
-//}
+

@@ -128,8 +128,13 @@ mat-icon {
 .mobileLogo {
   display: none;
 }
-
+.adler {
+  display: none;
+}
 @media screen and (max-width: 768px) {
+  .adler {
+    display: block;
+  }
   .homeBase {
     padding-top: 5px;
     font-size: 45px;

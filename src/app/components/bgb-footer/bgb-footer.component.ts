@@ -1,28 +1,22 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {DarkMode} from "../../shared/darkmode.functions";
 
 @Component({
   selector: 'bgb-footer',
   templateUrl: './bgb-footer.component.html',
   styleUrls: ['./bgb-footer.component.scss']
 })
-export class BgbFooterComponent implements OnInit {
+export class BgbFooterComponent extends DarkMode implements OnInit {
 
   @Input() visible?: boolean = true;
-  darkMode?: boolean;
+
 
   constructor() {
-    this.darkMode = Boolean(localStorage.getItem('darkmode'));
-    console.log("footer " + localStorage.getItem('darkmode'))
+    super();
   }
 
   ngOnInit(): void {
 
-  }
-
-  toggleDarkmode(): void {
-    this.darkMode = !this.darkMode;
-    localStorage.setItem('darkmode', this.darkMode.toString());
-    console.log("toggle " + localStorage.getItem('darkmode'))
   }
 
 }

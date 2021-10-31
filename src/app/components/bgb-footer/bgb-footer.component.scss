@@ -1,24 +1,31 @@
-.example-spacer {
-  flex: 1 1 auto;
-}
+@import "src/styles/coloring";
+
 
 .toolbar {
-  //background-color: transparent;
   background-color: #d91414;
   color: black;
   border-top: 1px solid black;
-
 }
+
 .toolbarDark {
   background-color: black;
   color: black;
   border-top: 1px solid black;
 }
 
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+
 .padding {
   padding-right: 4px;
   font-size: 0.8em;
   color: black;
+}
+
+.invisible {
+  display: none;
 }
 
 .test {

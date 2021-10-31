@@ -17,7 +17,10 @@
       <span class="example-spacer"></span>
 
       <button matTooltip="Email" mat-icon-button [routerLink]="['/contact']">
-        <mat-icon [ngClass]="{notVisible: bigBackground, matIconColorBig:bigBackground, matIconColorSmall: !bigBackground }">mail</mat-icon>
+        <mat-icon
+          [ngClass]="{notVisible: bigBackground, matIconColorBig:bigBackground, matIconColorSmall: !bigBackground }">
+          mail
+        </mat-icon>
       </button>
     </mat-toolbar-row>
     <mat-toolbar-row [ngClass]="{mobileLogoInvis: !bigBackground, mobileLogo: bigBackground}" class="mobileLogoPos">
@@ -101,5 +104,4 @@
       <img class="adler" src="../../../assets/images/adler.png"/>
     </mat-toolbar>
   </mat-sidenav>
-
 </mat-sidenav-container>

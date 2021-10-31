@@ -1,9 +1,9 @@
-<div class="footer">
+<div [ngClass]="{ notVisible: !visible}" class="footer">
   <mat-toolbar color="primary" [ngClass]="{ toolbar: true }">
     <mat-toolbar-row>
-      <!--      <button mat-icon-button aria-label="Activate Dark-Mode" (click)="toggleDarkmode()">-->
-      <!--        <mat-icon>{{ darkMode ? 'toggle_on' : 'toggle_off'}}</mat-icon>-->
-      <!--      </button>-->
+      <button mat-icon-button aria-label="Activate Dark-Mode" (click)="toggleDarkmode()">
+        <mat-icon>{{ darkmodeIsActive() ? 'toggle_on' : 'toggle_off'}}</mat-icon>
+      </button>
       <button matTooltip="Facebook" mat-icon-button [routerLink]="['/contact']">
         <mat-icon>facebook</mat-icon>
       </button>

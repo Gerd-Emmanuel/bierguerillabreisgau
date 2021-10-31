@@ -20,6 +20,18 @@ a {
   color: black;
 }
 
+.toolbar {
+  background-color: #d91414;
+  color: black;
+  border-top: 1px solid black;
+}
+
+.toolbarDark {
+  background-color: black;
+  color: black;
+  border-top: 1px solid black;
+}
+
 .titleCardPadding {
   padding-left: 40px;
   padding-top: 26px;
@@ -34,10 +46,11 @@ a {
 // -- MARGINS ---
 
 .spaceBetweenCardsHor {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
+
 .spaceBetweenCardsVert {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 // -- BASIC STYLE
@@ -45,11 +58,13 @@ a {
 .imageContainerFlex {
   display: flex;
 }
+
 .imageStylingBase {
   justify-content: center;
   object-fit: contain;
   padding-top: 10px;
 }
+
 // -- padding, sizing, etc
 .containerTextPadding {
   padding: 40px 40px 40px;
