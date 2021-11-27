@@ -1,3 +1,5 @@
+@import "src/styles/coloring";
+
 :host {
   display: flex;
   width: 100%;
@@ -70,15 +72,16 @@ mat-icon {
 }
 
 .background {
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-  width: 100%;
   position: absolute;
   justify-content: center;
 }
 
 .backgroundChange {
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  //flex-basis: ;
+  background-size: cover;
   animation: backgroundChange 20s linear;
   animation-iteration-count: infinite;
 }

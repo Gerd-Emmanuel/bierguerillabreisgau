@@ -58,16 +58,16 @@
           <li><u href="https://twitter.com/B_Guerilla">Twitter</u><br/></li>
         </mat-card-content>
       </mat-card>
-      <mat-card class="newsCard spaceBetweenCardsHor" *ngFor="let n of news">
+      <mat-card class="newsCard spaceBetweenCardsHor" *ngFor="let n of news | async">
         <mat-card-header class="newsColoring">
           <mat-card-title class="newsColoring">{{n.title}}</mat-card-title>
-          <mat-card-subtitle *ngIf="n.subtitle !== undefined">{{n.subtitle}}</mat-card-subtitle>
+          <mat-card-subtitle *ngIf="n.date !== undefined">{{n.date}}</mat-card-subtitle>
         </mat-card-header>
-        <mat-card-content class="newsTextPadding" *ngIf="n.newsText !== undefined">
-          {{n.newsText}}
+        <mat-card-content class="newsTextPadding" *ngIf="n.text !== undefined">
+          {{n.text}}
         </mat-card-content>
-        <img class="newsCardImg" *ngIf="n.imageUrl !== undefined" mat-card-image [src]="n.imageUrl"
-             [alt]="n.alt !== null ? n.alt : ''">
+<!--        <img class="newsCardImg" *ngIf="n.imageUrl !== undefined" mat-card-image [src]="n.imageUrl"-->
+<!--             [alt]="n.alt !== null ? n.alt : ''">-->
       </mat-card>
     </div>
   </div>

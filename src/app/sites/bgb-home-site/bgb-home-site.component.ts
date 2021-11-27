@@ -1,5 +1,7 @@
 import {Component, OnInit} from '@angular/core';
-import {CardModel} from "../../shared/model/newscard.model";
+import {DataServices} from "../../shared/services/data-services.service";
+import {News} from "../../shared/model/news.model";
+import {fromEvent, Observable} from "rxjs";
 
 @Component({
   selector: 'bgb-home-site',
@@ -8,34 +10,13 @@ import {CardModel} from "../../shared/model/newscard.model";
 })
 export class BgbHomeSiteComponent implements OnInit {
 
-  news: CardModel[] = [
-    {
-      title: "Generalversammlung 2021",
-      subtitle: "24.10.2021",
-      newsText: "Bald ist es wieder Zeit für eine Generalversammlung.",
-      // imageUrl: "./assets/images/florian.jpg"
-    },
-    {
-      title: "Erster Heimsieg Neues Stadion",
-      subtitle: "16.10.2021",
-      newsText: "Das neue Stadion wird mit einem Heimsieg eingeweiht."
-    },
-    {
-      title: "Neues Stadion",
-      subtitle: "01.06.2021",
-      newsText: "(Langes) Warten auf das erste Heimspiel im neuen Stadion. BGB kann es kaum abwarten!"
-    },
-    {
-      title: "Spiele in der Pandemie",
-      subtitle: "02.03.2020",
-      newsText: "So still war es im Stadion noch nie, es wird höchste Zeit ins Stadion zurückzukehren"
-    },
-  ]
+  news?: Observable<News[]>;
 
-  constructor() {
+  constructor(private dataServices: DataServices) {
   }
 
   ngOnInit(): void {
+    this.news = this.dataServices.getNews();
   }
 
 }

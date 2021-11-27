@@ -1,0 +1,234 @@
+[
+  {
+    "_id": {
+      "$oid": "6198faff00207b731d0f80e3"
+    },
+    "url": "./assets/images/member/florian.jpg",
+    "job": "Minister für Spezial-Projekte",
+    "name": "Florian Mut"
+  },
+  {
+    "_id": {
+      "$oid": "6198faff00207b731d0f80e4"
+    },
+    "url": "./assets/images/member/andi.jpg",
+    "job": "2. Vorstand",
+    "name": "Andreas Schnaiter"
+  },
+  {
+    "_id": {
+      "$oid": "6198faff00207b731d0f80e5"
+    },
+    "url": "./assets/images/member/stefanf.jpg",
+    "job": "Beisitzer und Frauen-Beauftragter",
+    "name": "Stefan Fischer"
+  },
+  {
+    "_id": {
+      "$oid": "6198faff00207b731d0f80e6"
+    },
+    "url": "./assets/images/member/default.png",
+    "job": "Beisitzer und Ministerium für Medien",
+    "name": "Wolfgang Brunner"
+  },
+  {
+    "_id": {
+      "$oid": "6198faff00207b731d0f80e7"
+    },
+    "url": "./assets/images/member/sonja.jpg",
+    "job": "Auslandsministerin + Social Media",
+    "name": "Sonja Eisenegger"
+  },
+  {
+    "_id": {
+      "$oid": "6198faff00207b731d0f80e8"
+    },
+    "url": "./assets/images/member/stefanm.jpg",
+    "job": " -Sergeant of arms + Ministerium für Aq",
+    "name": "Stefan Menner"
+  },
+  {
+    "_id": {
+      "$oid": "6198faff00207b731d0f80e9"
+    },
+    "url": "./assets/images/member/default.png",
+    "job": "Feiertagsministerin",
+    "name": "Mareike Lorenz"
+  },
+  {
+    "_id": {
+      "$oid": "6198faff00207b731d0f80f1"
+    },
+    "url": "./assets/images/member/frieder.jpg",
+    "job": "Justizminister",
+    "name": "Frieder Laupe"
+  },
+  {
+    "_id": {
+      "$oid": "6198faff00207b731d0f80f2"
+    },
+    "url": "./assets/images/member/bolze.jpg",
+    "job": "Pöbel-Minister & Mr. Super-Sling",
+    "name": "Daniel Bolze"
+  },
+  {
+    "_id": {
+      "$oid": "6198faff00207b731d0f80f3"
+    },
+    "url": "./assets/images/member/default.png",
+    "job": "Bauministerium",
+    "name": "Martin Buttenmüller"
+  },
+  {
+    "_id": {
+      "$oid": "6198faff00207b731d0f80f4"
+    },
+    "url": "./assets/images/member/default.png",
+    "job": "Jugend",
+    "name": "Emilia Schneiter"
+  },
+  {
+    "_id": {
+      "$oid": "6198faff00207b731d0f80f5"
+    },
+    "url": "./assets/images/member/default.png",
+    "job": "Alterspräsident",
+    "name": "Jacques Moser"
+  },
+  {
+    "_id": {
+      "$oid": "6198faff00207b731d0f80f6"
+    },
+    "url": "./assets/images/member/default.png",
+    "job": "Harte-Sprirituosen Minister",
+    "name": "Kai Siebold"
+  },
+  {
+    "_id": {
+      "$oid": "6198faff00207b731d0f80f7"
+    },
+    "url": "./assets/images/member/default.png",
+    "job": "Drogen Beauftragter",
+    "name": "Patrick Eisenegger"
+  },
+  {
+    "_id": {
+      "$oid": "6198faff00207b731d0f80f8"
+    },
+    "url": "./assets/images/member/default.png",
+    "job": "Sponsoring",
+    "name": "Peter Dengler"
+  },
+  {
+    "_id": {
+      "$oid": "6198faff00207b731d0f80f9"
+    },
+    "url": "./assets/images/member/default.png",
+    "job": "Nikolaus",
+    "name": "Bladimir Gonzalez"
+  },
+  {
+    "_id": {
+      "$oid": "6198faff00207b731d0f80g1"
+    },
+    "url": "./assets/images/member/gerd.jpg",
+    "job": "Homepage",
+    "name": "Gerd-Emmanuel Nandzik"
+  },
+  {
+    "_id": {
+      "$oid": "6198faff00207b731d0f80g2"
+    },
+    "url": "./assets/images/member/default.png",
+    "job": "Bier Minister",
+    "name": "Daniel Weiß"
+  },
+  {
+    "_id": {
+      "$oid": "6198faff00207b731d0f80g3"
+    },
+    "url": "./assets/images/member/default.png",
+    "job": "Jugendbeauftragter",
+    "name": "Nils Brunner"
+  },
+  {
+    "_id": {
+      "$oid": "6198faff00207b731d0f80g4"
+    },
+    "url": "./assets/images/member/default.png",
+    "job": "",
+    "name": "Robert Welsch"
+  },
+  {
+    "_id": {
+      "$oid": "6198faff00207b731d0f80g5"
+    },
+    "url": "./assets/images/member/default.png",
+    "job": "Familienministerium",
+    "name": "Markus Mut"
+  },
+  {
+    "_id": {
+      "$oid": "6198faff00207b731d0f80g6"
+    },
+    "url": "./assets/images/member/default.png",
+    "job": "Familienministerium",
+    "name": "Colin Mut"
+  },
+  {
+    "_id": {
+      "$oid": "6198faff00207b731d0f80g7"
+    },
+    "url": "./assets/images/member/default.png",
+    "job": "Familienministerium",
+    "name": "Isabell Mut"
+  },
+  {
+    "_id": {
+      "$oid": "6198faff00207b731d0f80g8"
+    },
+    "url": "./assets/images/member/default.png",
+    "job": "Ministerium für Diverses",
+    "name": "Pawel Luska"
+  },
+  {
+    "_id": {
+      "$oid": "6198faff00207b731d0f80g9"
+    },
+    "url": "./assets/images/member/default.png",
+    "job": "Schnaps-Beauftragter",
+    "name": "Sven-Uwe Günther"
+  },
+  {
+    "_id": {
+      "$oid": "6198faff00207b731d0f80h1"
+    },
+    "url": "./assets/images/member/default.png",
+    "job": "Gesang",
+    "name": "Philipp Keller"
+  },
+  {
+    "_id": {
+      "$oid": "6198faff00207b731d0f80h2"
+    },
+    "url": "./assets/images/member/default.png",
+    "job": "Hygiene Beauftragte",
+    "name": "Rita Lehmann"
+  },
+  {
+    "_id": {
+      "$oid": "6198faff00207b731d0f80h3"
+    },
+    "url": "./assets/images/member/default.png",
+    "job": "",
+    "name": "Stefanie Reisinger"
+  },
+  {
+    "_id": {
+      "$oid": "6198faff00207b731d0f80h4"
+    },
+    "url": "./assets/images/member/default.png",
+    "job": "",
+    "name": "Lukas Wunderle"
+  }
+]

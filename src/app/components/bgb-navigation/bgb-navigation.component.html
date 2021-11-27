@@ -1,6 +1,5 @@
 <!--TOPBAR-->
-<div [ngClass]="{background: bigBackground, backgroundChange: bigBackground, backgroundSmall: !bigBackground}"
-     [class]="bigBackground ? 'background' : 'backgroundSmall'">
+<div [ngClass]="{background: bigBackground, backgroundChange: bigBackground, backgroundSmall: !bigBackground}">
   <mat-toolbar color="primary" class="wrapperRow">
     <mat-toolbar-row class="iconsSize">
       <button mat-icon-button aria-label="Navigation öffnen" class="notVisible" (click)="drawer.toggle()">
