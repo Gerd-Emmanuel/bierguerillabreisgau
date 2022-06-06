@@ -1,8 +1,10 @@
 import {Component, OnInit} from '@angular/core';
-import {Observable} from "rxjs";
-import {DataServices} from "../../shared/services/data-services.service";
+import {EMPTY, Observable} from "rxjs";
 import {CardModel} from "../../shared/model/membercard.model";
 import {StorageService} from "../../shared/services/storage.service";
+import {Store} from "@ngrx/store";
+import {selectMember} from "../../state/app.selector";
+import {catchError, map} from "rxjs/operators";
 
 @Component({
   selector: 'bgb-carousel',
@@ -12,14 +14,23 @@ import {StorageService} from "../../shared/services/storage.service";
 export class BgbCarouselComponent implements OnInit {
   members?: Observable<CardModel[]>;
 
-  constructor(private dataServices: DataServices, private resizeService: StorageService) {
+  constructor(private resizeService: StorageService, private store: Store) {
   }
 
   ngOnInit(): void {
-    this.members = this.dataServices.getMember();
+    this.members = this.store.select(selectMember)
+      .pipe(
+        catchError(() => EMPTY),
+        map(res =>
+          res.map(member => ({
+            thumbImage: member.url,
+            alt: "",
+            title: member.name + " - \n \n" + member.job
+          })))
+      );
   }
 
-  amountSlidesScrolling() : number {
+  amountSlidesScrolling(): number {
     return this.resizeService.getIsMobile() ? 1 : 3;
   }
 }

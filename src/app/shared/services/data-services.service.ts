@@ -10,7 +10,7 @@ import {ShopItem} from "../model/shopitem.model";
 @Injectable({
   providedIn: 'root'
 })
-export class DataServices {
+export class ApiService {
 
   constructor(private http: HttpClient) {
   }
@@ -34,6 +34,14 @@ export class DataServices {
       .get<News[]>("api/v1/news")
       .pipe(
         catchError(this.handleError<News[]>('news', []))
+      );
+  }
+
+  getMember2(): Observable<Member[]> {
+    return this.http
+      .get<Member[]>("api/v1/member")
+      .pipe(
+        catchError(this.handleError<Member[]>('member', []))
       );
   }
 

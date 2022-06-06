@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Observable} from "rxjs";
 import {ShopItem} from "../../shared/model/shopitem.model";
-import {DataServices} from "../../shared/services/data-services.service";
+import {Store} from "@ngrx/store";
+import {selectShopItems} from "../../state/app.selector";
 
 @Component({
   selector: 'bgb-shop-site',
@@ -9,13 +10,13 @@ import {DataServices} from "../../shared/services/data-services.service";
   styleUrls: ['./bgb-shop-site.component.scss']
 })
 export class BgbShopSiteComponent implements OnInit {
-  shopItems?: Observable<ShopItem[]>;
+  shopItems?: Observable<ReadonlyArray<ShopItem>>;
 
-  constructor(private dataServices: DataServices) {
+  constructor(private store: Store) {
   }
 
   ngOnInit(): void {
-    this.shopItems = this.dataServices.getShopItems();
+    this.shopItems = this.store.select(selectShopItems);
   }
 
 }

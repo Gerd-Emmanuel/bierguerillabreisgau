@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {Member} from "../../shared/model/member.model";
+import {Observable} from "rxjs";
+import {Store} from "@ngrx/store";
+import {selectMember} from "../../state/app.selector";
 
 @Component({
   selector: 'bgb-membership',

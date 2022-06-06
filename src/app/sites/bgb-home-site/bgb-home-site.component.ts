@@ -1,7 +1,8 @@
 import {Component, OnInit} from '@angular/core';
-import {DataServices} from "../../shared/services/data-services.service";
 import {News} from "../../shared/model/news.model";
-import {fromEvent, Observable} from "rxjs";
+import {Observable} from "rxjs";
+import {Store} from "@ngrx/store";
+import {selectNews} from "../../state/app.selector";
 
 @Component({
   selector: 'bgb-home-site',
@@ -10,13 +11,13 @@ import {fromEvent, Observable} from "rxjs";
 })
 export class BgbHomeSiteComponent implements OnInit {
 
-  news?: Observable<News[]>;
+  news?: Observable<ReadonlyArray<News>>;
 
-  constructor(private dataServices: DataServices) {
+  constructor(private store: Store) {
   }
 
   ngOnInit(): void {
-    this.news = this.dataServices.getNews();
+    this.news = this.store.select(selectNews);
   }
 
 }

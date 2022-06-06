@@ -28,6 +28,12 @@ import {MatListModule} from "@angular/material/list";
 import {MatTooltipModule} from "@angular/material/tooltip";
 import {MatButtonToggleModule} from "@angular/material/button-toggle";
 import {MatSidenavModule} from "@angular/material/sidenav";
+import {StoreModule} from '@ngrx/store';
+import {appReducer} from "./state/app.reducer";
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { environment } from '../environments/environment';
+import {EffectsModule} from "@ngrx/effects";
+import {AppEffects} from "./state/app.effects";
 
 @NgModule({
   declarations: [
@@ -67,6 +73,12 @@ import {MatSidenavModule} from "@angular/material/sidenav";
     MatTooltipModule,
     MatButtonToggleModule,
     MatSidenavModule,
+    StoreModule.forRoot({}),
+    StoreModule.forFeature('app', appReducer),
+    // EffectsModule.forFeature([AppEffects]),
+    EffectsModule.forRoot([AppEffects]),
+
+    StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production }),
   ],
   providers: [],
   bootstrap: [AppComponent]
