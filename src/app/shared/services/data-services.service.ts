@@ -17,7 +17,7 @@ export class ApiService {
 
   getMember(): Observable<CardModel[]> {
     return this.http
-      .get<Member[]>("api/v1/member")
+      .get<Member[]>("api/v1/member/admin")
       .pipe(
         catchError(this.handleError<Member[]>('member', [])),
         map(res =>

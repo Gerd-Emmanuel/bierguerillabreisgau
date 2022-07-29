@@ -6,6 +6,7 @@ import {BgbEventsSiteComponent} from "../sites/bgb-events/bgb-events-site.compon
 import {BgbShopSiteComponent} from "../sites/bgb-shop/bgb-shop-site.component";
 import {BgbSchwimmnudelnComponent} from "../sites/bgb-schwimmnudeln/bgb-schwimmnudeln.component";
 import {BgbContactComponent} from "../sites/bgb-contact/bgb-contact.component";
+import {BgbAdminComponent} from "../sites/bgb-admin/bgb-admin.component";
 
 
 const routes: Routes = [
@@ -16,6 +17,7 @@ const routes: Routes = [
   {path: 'shop', component: BgbShopSiteComponent},
   {path: 'schwimmnudeln', component: BgbSchwimmnudelnComponent},
   {path: 'contact', component: BgbContactComponent},
+  {path: 'admin', component: BgbAdminComponent},
 ];
 
 @NgModule({

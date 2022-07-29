@@ -30,10 +30,14 @@ import {MatButtonToggleModule} from "@angular/material/button-toggle";
 import {MatSidenavModule} from "@angular/material/sidenav";
 import {StoreModule} from '@ngrx/store';
 import {appReducer} from "./state/app.reducer";
-import { StoreDevtoolsModule } from '@ngrx/store-devtools';
-import { environment } from '../environments/environment';
+import {StoreDevtoolsModule} from '@ngrx/store-devtools';
+import {environment} from '../environments/environment';
 import {EffectsModule} from "@ngrx/effects";
 import {AppEffects} from "./state/app.effects";
+import {BgbAdminComponent} from "./sites/bgb-admin/bgb-admin.component";
+import {AuthModule} from "@auth0/auth0-angular";
+import {OAuthModule, OAuthService, UrlHelperService} from "angular-oauth2-oidc";
+import { environment as env } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -46,7 +50,8 @@ import {AppEffects} from "./state/app.effects";
     BgbEventsSiteComponent,
     BgbShopSiteComponent,
     BgbSchwimmnudelnComponent,
-    BgbContactComponent
+    BgbContactComponent,
+    BgbAdminComponent
   ],
   imports: [
     BrowserModule,
@@ -73,14 +78,16 @@ import {AppEffects} from "./state/app.effects";
     MatTooltipModule,
     MatButtonToggleModule,
     MatSidenavModule,
+    HttpClientModule,
+    OAuthModule.forRoot(),
     StoreModule.forRoot({}),
     StoreModule.forFeature('app', appReducer),
     // EffectsModule.forFeature([AppEffects]),
     EffectsModule.forRoot([AppEffects]),
 
-    StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production }),
+    StoreDevtoolsModule.instrument({maxAge: 25, logOnly: environment.production}),
   ],
-  providers: [],
+  providers: [OAuthService, UrlHelperService ],
   bootstrap: [AppComponent]
 })
 export class AppModule {
